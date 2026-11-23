@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 4961d88 -->
+<!-- last-portal-commit: 06ac5a0 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:31:40Z -->
+<!-- last-flag-check: 2026-11-23T11:40:28Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,11 @@ are available to every organisation.
 
 ### 23 November
 
+- **Copy, paste and duplicate blocks from the keyboard.** In the designer,
+  Ctrl+D duplicates the selected block, and Ctrl+C and Ctrl+V copy a block and
+  paste it after the one you select. Duplicating now selects the copy. A field
+  chip you click is selected on its own, and Delete removes it. See
+  [Copying, pasting and duplicating blocks](/signatures/designer/#copying-pasting-and-duplicating-blocks).
 - **Undo in the designer goes back one thing at a time.** Dragging a colour
   across the picker is now one undo step, and pausing, leaving a control or
   selecting something else starts a new one. Ctrl+Z inside a text block undoes

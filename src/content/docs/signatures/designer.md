@@ -66,7 +66,36 @@ people who receive the email never see it.
 The new block is selected as it lands, so its settings are already open in the
 inspector on the right. Columns cannot be dropped inside a column. Every block
 has a handle with Duplicate and Delete on it; a selected block also goes with
-the Delete key.
+the Delete key. Duplicate puts the copy straight after the original and selects
+the copy, so its settings are open for the next change.
+
+### Copying, pasting and duplicating blocks
+
+You can copy blocks from the keyboard as well as from the handle. Select the
+block on the canvas first.
+
+| Keys | What they do |
+| --- | --- |
+| Ctrl+D (Cmd+D on a Mac) | Duplicate the selected block and select the copy |
+| Ctrl+C (Cmd+C on a Mac) | Copy the selected block |
+| Ctrl+V (Cmd+V on a Mac) | Paste the copied block after the selected one |
+| Delete or Backspace | Delete the selected block, or the selected field chip |
+| Escape | Clear the selection |
+
+To copy a block to another place in the design:
+
+1. Select the block and press Ctrl+C. A message confirms the block is copied.
+2. Select the block the copy should follow. It can be inside a column.
+3. Press Ctrl+V. The copy lands after that block and is selected.
+
+With nothing selected, Ctrl+V adds the copy at the end of the design. A Columns
+block cannot be pasted inside a column. The copied block stays available only
+in that browser tab until you copy another.
+
+Ctrl+D works while you are typing in a text block and duplicates that block,
+including what you just typed. Ctrl+C and Ctrl+V inside a text block or an
+inspector box are the browser's normal copy and paste of text. While a dialog
+is open, Delete and Backspace act on the dialog, never on the block behind it.
 
 ## Undo and redo
 
@@ -345,6 +374,12 @@ so the token always matches something that actually renders.
 
 The field lands at the cursor as a chip. Choosing Insert field without first
 putting the cursor in the block appends the chip at the end.
+
+Clicking a chip selects the chip on its own. It is outlined, its settings open
+in the inspector, and the cursor leaves the text, so pressing Delete or
+Backspace removes the chip. To go back to the whole block and its toolbar,
+click the block's text. Pressing Escape in the field menu closes the menu and
+leaves the block selected.
 
 The field menu is segmented, grouped and filterable. Each row shows the field's
 label with its `{{token}}` underneath, so a long field name never competes with
