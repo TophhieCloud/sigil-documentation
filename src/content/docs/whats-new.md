@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 18cad04 -->
+<!-- last-portal-commit: 4961d88 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:26:33Z -->
+<!-- last-flag-check: 2026-11-23T11:31:40Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 23 November
 
+- **Undo in the designer goes back one thing at a time.** Dragging a colour
+  across the picker is now one undo step, and pausing, leaving a control or
+  selecting something else starts a new one. Ctrl+Z inside a text block undoes
+  the design, not only your typing, and Ctrl+Y redoes. Undo and Redo are greyed
+  out when there is nothing to undo or redo. See
+  [Undo and redo](/signatures/designer/#undo-and-redo).
 - **Enter and spaces in the designer do what you typed.** Pressing Enter in a
   text block starts a new line, and that line break is in the signature people
   send. Doubled spaces and spaces at the start or end of a line

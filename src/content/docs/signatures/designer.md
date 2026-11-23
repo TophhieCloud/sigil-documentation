@@ -68,6 +68,34 @@ inspector on the right. Columns cannot be dropped inside a column. Every block
 has a handle with Duplicate and Delete on it; a selected block also goes with
 the Delete key.
 
+## Undo and redo
+
+The Undo and Redo arrows are in the designer's top bar. They step back and
+forward through your changes to the design, up to the last 100. Each one is
+greyed out when there is nothing to undo or redo.
+
+| Keys | What they do |
+| --- | --- |
+| Ctrl+Z (Cmd+Z on a Mac) | Undo |
+| Ctrl+Shift+Z or Ctrl+Y (Cmd+Shift+Z or Cmd+Y on a Mac) | Redo |
+
+The shortcuts work inside a text block too, and there they undo the design, not
+only your typing. A layout or inspector change you made before clicking into the
+block is one more press away. Undo and Redo on the browser's Edit menu do the
+same inside a text block. In an ordinary input box, such as a size or a link
+address in the inspector, the shortcuts undo that box's own typing instead.
+
+One undo step matches one thing you did:
+
+- A run of typing, a slider drag or a colour dragged across the picker is one
+  step.
+- Pausing for about a second ends the step, and so do leaving the control or
+  selecting something else on the canvas. Typing "AAA", clicking away and typing
+  "BBB" gives two steps, not one.
+
+Undoing or redoing clears the current selection. Discarding your edits, or
+discarding a saved draft, empties the history, so you cannot undo back past it.
+
 ## Social icons
 
 A social icons block ships with 27 built-in marks, so a row of logos needs no
