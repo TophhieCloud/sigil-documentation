@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 002b912 -->
+<!-- last-portal-commit: cf577a4 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:57:58Z -->
+<!-- last-flag-check: 2026-11-23T12:13:45Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,11 @@ are available to every organisation.
 
 ### 23 November
 
+- **Format a field chip from the toolbar.** Selecting a field chip in a text
+  block now keeps the toolbar up, and bold, italic, underline, colour, link and
+  clear formatting apply to that chip. Ctrl+B, Ctrl+I and Ctrl+U work on it too,
+  and the chip's settings gain Italic and Underline beside Bold. See
+  [Formatting a field chip](/signatures/designer/#formatting-a-field-chip).
 - **Build a design from the keyboard.** Clicking a tile on the Blocks rail, or
   pressing Enter on it, adds the block after the selected one without dragging.
   Tab selects blocks on the canvas, and Alt+Up and Alt+Down arrow move the

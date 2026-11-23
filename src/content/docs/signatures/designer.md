@@ -90,6 +90,7 @@ block on the canvas first.
 | Ctrl+C (Cmd+C on a Mac) | Copy the selected block |
 | Ctrl+V (Cmd+V on a Mac) | Paste the copied block after the selected one |
 | Delete or Backspace | Delete the selected block, or the selected field chip |
+| Ctrl+B, Ctrl+I or Ctrl+U (Cmd on a Mac) | Turn bold, italic or underline on or off for the selected field chip |
 | Escape | Clear the selection |
 
 To copy a block to another place in the design:
@@ -321,6 +322,23 @@ into it then may still carry a size of its own, which nothing else in the
 designer shows. If one link or line comes out bigger than the text around it,
 highlight it, clear its formatting, and publish.
 
+### Formatting a field chip
+
+A field chip is formatted as a whole, so you select it rather than highlight it.
+With a chip selected the toolbar stays in place and every button on it applies
+to that chip: bold, italic, underline, colour, the link, the eye button and the
+eraser.
+
+1. Click the chip inside the text block. It is outlined.
+2. Choose Bold, Italic or Underline on the toolbar, or press Ctrl+B, Ctrl+I or
+   Ctrl+U (Cmd on a Mac). Press the same button or keys again to turn it off.
+3. To change its colour, choose the colour button and pick one.
+
+Bold, Italic and Underline show as pressed while the chip has them on. The
+same three settings are tick boxes in the inspector's settings for the chip.
+The eraser takes the chip's bold, italic, underline, colour and size away, so it
+follows the block again. Its field, link and visibility rule stay.
+
 ### Line breaks and spacing
 
 Pressing Enter in a text block starts a new line within that block. A text block
@@ -424,9 +442,11 @@ putting the cursor in the block appends the chip at the end.
 
 Clicking a chip selects the chip on its own. It is outlined, its settings open
 in the inspector, and the cursor leaves the text, so pressing Delete or
-Backspace removes the chip. To go back to the whole block and its toolbar,
-click the block's text. Pressing Escape in the field menu closes the menu and
-leaves the block selected.
+Backspace removes the chip. The toolbar stays up and formats the chip, as
+described in [Formatting a field chip](#formatting-a-field-chip). Choosing
+Insert field while a chip is selected adds the new field straight after it. To
+go back to editing the text, click the block's text. Pressing Escape in the
+field menu closes the menu and leaves the block selected.
 
 The field menu is segmented, grouped and filterable. Each row shows the field's
 label with its `{{token}}` underneath, so a long field name never competes with
