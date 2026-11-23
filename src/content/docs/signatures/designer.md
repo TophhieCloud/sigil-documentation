@@ -670,6 +670,14 @@ standing for the sake of its own line breaks is exactly the blank line this
 removes. A block that holds nothing but line breaks is left alone: that is
 deliberate vertical space, and no condition of Sigil's belongs on it.
 
+## The live preview
+
+The live preview under the canvas renders the signature as the service builds
+it, and updates shortly after each edit. A new render replaces the old one only
+once it is ready, so the pane does not go blank while you type. With the pane
+collapsed, only the character count shows, and it updates after a longer pause
+in typing.
+
 ## Seeing the banner and footer
 
 The live preview has a Banner & footer switch. Turned on, it adds whatever

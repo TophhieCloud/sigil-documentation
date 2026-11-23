@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: e1305f2 -->
+<!-- last-portal-commit: 2f45ce5 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:53:33Z -->
+<!-- last-flag-check: 2026-11-23T11:53:37Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,9 @@ are available to every organisation.
 
 ### 23 November
 
+- **A live preview that doesn't flash.** The designer's live preview keeps the
+  last render on screen until the next one is ready, so it no longer goes blank
+  while you type. See [The live preview](/signatures/designer/#the-live-preview).
 - **Save a design before it's finished.** The designer now saves a draft while
   blocks are still waiting for content, such as an image block with no image
   picked or a button with no link. The message says how many things are left,
