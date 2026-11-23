@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: c2c37d7 -->
+<!-- last-portal-commit: 5e51540 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:45:03Z -->
+<!-- last-flag-check: 2026-11-23T11:48:35Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 23 November
 
+- **Save a design before it's finished.** The designer now saves a draft while
+  blocks are still waiting for content, such as an image block with no image
+  picked or a button with no link. The message says how many things are left,
+  and the draft can't be submitted for review or published until they are done.
+  See
+  [Saving a design you haven't finished](/signatures/designer/#saving-a-design-you-havent-finished).
 - **The designer asks before it publishes.** Publish, Staged and Approve and
   publish now ask you to confirm first, as they already did in the HTML editor,
   and the buttons are unavailable while a change is still being saved. With a

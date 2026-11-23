@@ -46,6 +46,12 @@ A message confirms the draft is saved and that users keep the live version
 until you publish. If the rendered signature is over Outlook's size limit, the
 draft is still saved and the message says it cannot be published as it is.
 
+In the designer, a draft can also be saved with blocks still waiting for
+content, such as an image block with no image picked. The message says how many
+things are left to finish, and the draft can't be submitted for review or
+published until they are done. See
+[saving a design you haven't finished](/signatures/designer/#saving-a-design-you-havent-finished).
+
 ### Discarding a draft
 
 1. Open the template in its editor from Templates.

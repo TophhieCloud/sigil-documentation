@@ -719,6 +719,37 @@ as a hand-written template, and is subject to the same
 [Outlook constraints](/signatures/outlook-constraints/), including the 30,000
 character limit.
 
+### Saving a design you haven't finished
+
+A draft can hold blocks that are still waiting for content, so you can save a
+half-built signature and come back to it. These count as unfinished rather than
+wrong:
+
+- an image block with no image picked
+- a button with no label, or no link
+- a social block with no icons yet
+- an icon set to an uploaded image with no image picked, or an icon with no link
+- a QR code in link mode with no link
+
+To save one:
+
+1. Choose Save draft.
+2. Read the message. It says how many things are still to finish, for example
+   "Draft saved with 2 things still to finish."
+
+The badges on the canvas keep marking the blocks that need content. Anything
+that is wrong rather than missing, such as a link that isn't a valid address,
+still stops the save.
+
+An unfinished draft can't be submitted for review or published. Submit for
+review, Publish, Staged and Approve and publish all check the design in full
+first. The
+designer selects the first block that still needs content and names what is
+missing, with a count if there are more.
+
+1. Fill in each block the canvas badges mark.
+2. Save the draft again, then submit or publish it.
+
 ## The same publishing controls as the HTML editor
 
 Everything the [HTML editor](/signatures/html-editor/) can do with a body before

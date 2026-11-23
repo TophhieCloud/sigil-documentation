@@ -100,6 +100,10 @@ reads Awaiting review until they do. On the Templates page the template
 carries an Awaiting review badge. Saving another draft takes it out of the
 queue.
 
+A designer draft with blocks still waiting for content can't be submitted. The
+designer points you to the first block to finish. See
+[saving a design you haven't finished](/signatures/designer/#saving-a-design-you-havent-finished).
+
 ### Approving a draft
 
 You need to be an Admin.
