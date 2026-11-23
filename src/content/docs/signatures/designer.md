@@ -63,8 +63,18 @@ people who receive the email never see it.
 2. Drop it in the gap where it should sit, between two blocks or inside a
    column.
 
+You can also click a tile instead of dragging it:
+
+1. Select the block the new one should follow. It can be inside a column. To
+   add the block at the end of the design, press Escape first so that nothing
+   is selected.
+2. Click the tile on the Blocks rail. The new block goes straight after the
+   selected one, in the same column, or at the end of the design.
+
 The new block is selected as it lands, so its settings are already open in the
-inspector on the right. Columns cannot be dropped inside a column. Every block
+inspector on the right. Columns cannot be dropped inside a column, and clicking
+the Columns tile while a block inside a column is selected shows a message
+instead of adding it. Every block
 has a handle with Duplicate and Delete on it; a selected block also goes with
 the Delete key. Duplicate puts the copy straight after the original and selects
 the copy, so its settings are open for the next change.
@@ -96,6 +106,34 @@ Ctrl+D works while you are typing in a text block and duplicates that block,
 including what you just typed. Ctrl+C and Ctrl+V inside a text block or an
 inspector box are the browser's normal copy and paste of text. While a dialog
 is open, Delete and Backspace act on the dialog, never on the block behind it.
+
+### Working without a mouse
+
+You can add, select and move blocks from the keyboard, and the canvas, the
+Blocks rail and the inspector's settings are labelled for screen readers.
+
+| Keys | What they do |
+| --- | --- |
+| Tab | Move between the tiles on the Blocks rail, the blocks on the canvas and the inspector. A block you Tab to is selected. |
+| Enter or Space on a Blocks rail tile | Add that block after the selected one, or at the end of the design |
+| Alt+Up arrow | Move the selected block one place up |
+| Alt+Down arrow | Move the selected block one place down |
+
+To move a block without dragging it:
+
+1. Press Tab until the block is selected. A coloured outline shows which block
+   has focus.
+2. Press Alt+Up arrow or Alt+Down arrow to move it one place at a time.
+
+A block moves only within the list it is in: the top level of the design, or
+the column that holds it. To move a block into a different column, use Ctrl+C
+and Ctrl+V as described above, then delete the original. Alt and the arrow keys
+do nothing while you are typing in a text block or an inspector box.
+
+Dialogs keep the keyboard inside them while they are open, so Tab cycles
+through the dialog's own controls. When the dialog closes, you are back on the
+control that opened it. Messages the designer shows at the foot of the screen
+are read out by screen readers, and error messages are read out straight away.
 
 ## Undo and redo
 

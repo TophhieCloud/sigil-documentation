@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 2f45ce5 -->
+<!-- last-portal-commit: 002b912 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:53:37Z -->
+<!-- last-flag-check: 2026-11-23T11:57:58Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 23 November
 
+- **Build a design from the keyboard.** Clicking a tile on the Blocks rail, or
+  pressing Enter on it, adds the block after the selected one without dragging.
+  Tab selects blocks on the canvas, and Alt+Up and Alt+Down arrow move the
+  selected block one place. Dialogs keep Tab inside them and return you to
+  where you were when they close. See
+  [Working without a mouse](/signatures/designer/#working-without-a-mouse).
 - **A live preview that doesn't flash.** The designer's live preview keeps the
   last render on screen until the next one is ready, so it no longer goes blank
   while you type. See [The live preview](/signatures/designer/#the-live-preview).
