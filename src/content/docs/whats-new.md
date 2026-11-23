@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 06ac5a0 -->
+<!-- last-portal-commit: c2c37d7 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:40:28Z -->
+<!-- last-flag-check: 2026-11-23T11:45:03Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 23 November
 
+- **The designer asks before it publishes.** Publish, Staged and Approve and
+  publish now ask you to confirm first, as they already did in the HTML editor,
+  and the buttons are unavailable while a change is still being saved. With a
+  saved draft and unsaved edits, Discard asks whether to throw away only the
+  edits or the draft as well. See
+  [Discarding a draft](/signatures/publishing/#discarding-a-draft).
 - **Copy, paste and duplicate blocks from the keyboard.** In the designer,
   Ctrl+D duplicates the selected block, and Ctrl+C and Ctrl+V copy a block and
   paste it after the one you select. Duplicating now selects the copy. A field

@@ -111,7 +111,8 @@ You need to be an Admin.
    card sits at the top and Diff compares it against the live body. In the
    designer, a notice names who submitted it.
 4. Choose Approve and publish.
-5. In the HTML editor, choose Approve and publish in the confirmation.
+5. Choose Approve and publish in the confirmation. In the designer it names
+   who submitted the version you are about to publish.
 
 A message confirms it is approved and published.
 
@@ -124,6 +125,10 @@ A message confirms it is approved and published.
 
 The author sees the note in the editor, marked as sent back by you, the next
 time they open the template.
+
+In the designer, the dialog closes only once Sigil has taken the note. If
+sending fails, the dialog stays open with your note in it, so you can try again
+without retyping it.
 
 ### The author hears the outcome
 

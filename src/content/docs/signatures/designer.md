@@ -727,7 +727,7 @@ it goes live, the designer can do too.
 | Control | What it does |
 | --- | --- |
 | Save draft | Keeps the working copy without changing what anybody receives |
-| Discard, or Discard draft once one is saved | Reverts unsaved edits, or with a draft saved, deletes it and reloads the published design |
+| Discard, or Discard draft once one is saved | Reverts unsaved edits, or with a draft saved, deletes it and reloads the published design. With both a draft and unsaved edits, asks which to throw away. See [discarding a draft](/signatures/publishing/#discarding-a-draft) |
 | Submit for review | Puts the draft in the [approvals queue](/signatures/approvals/) |
 | Approve and publish, Send back | The approver's two choices on a submitted draft |
 | Schedule | Books the publish for an instant you choose |

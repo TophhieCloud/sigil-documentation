@@ -38,8 +38,7 @@ partner Owner or Admin managing your organisation.
 1. Open the template in its editor from Templates.
 2. Choose Save draft if you want the body kept whichever way the rollout ends.
 3. Choose Staged publish. In the designer the button reads Staged.
-4. In the HTML editor, choose Start rollout in the confirmation. The designer
-   starts it as soon as you choose the button.
+4. Choose Start rollout in the confirmation.
 
 A message says the rollout has started at 10%, and a panel appears above the
 editor to watch it from. The button is unavailable while a rollout is already

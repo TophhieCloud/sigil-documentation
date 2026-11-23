@@ -56,6 +56,15 @@ draft is still saved and the message says it cannot be published as it is.
 
 The editor returns to the live version.
 
+In the designer, a saved draft with unsaved edits on top of it gives you two
+things you could throw away, so the dialog asks which:
+
+- Discard unsaved changes takes the canvas back to the saved draft and keeps
+  the draft.
+- Delete the draft too goes back to the published design and loses both.
+
+What users receive doesn't change either way.
+
 ### Seeing who else has it open
 
 When a colleague opens the same template while you have it open, a line under
@@ -181,12 +190,16 @@ qualifies, whatever it includes.
 
 1. Open the template in its editor from Templates.
 2. Choose Publish.
-3. In the HTML editor, choose Publish in the confirmation. The designer
-   publishes as soon as you choose the button.
+3. Choose Publish in the confirmation. In the designer it asks "Publish this
+   to everyone? New messages pick it up within seconds."
 
 A message confirms it is published. The designer adds that new messages pick
 it up within seconds, and the HTML editor adds the same when the template is
 your organisation's new-message signature.
+
+In the designer, the publishing buttons are unavailable while a save, publish
+or other change is still on its way to Sigil, so a second click cannot send a
+second copy of the same change.
 
 ## What blocks a publish
 
