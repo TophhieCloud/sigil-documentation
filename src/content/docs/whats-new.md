@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 5e51540 -->
+<!-- last-portal-commit: e1305f2 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T11:48:35Z -->
+<!-- last-flag-check: 2026-11-23T11:53:33Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -22,6 +22,21 @@ are available to every organisation.
   and the draft can't be submitted for review or published until they are done.
   See
   [Saving a design you haven't finished](/signatures/designer/#saving-a-design-you-havent-finished).
+- **Your images on the canvas.** Library images and uploaded social icons now
+  show as the real picture in the designer, and Browse lets you pick one from
+  thumbnails. The inspector shows an image's natural size, with Use it to apply
+  it, and Keep proportions keeps width and height in step. A file over 1 MB
+  is turned away before it uploads. See
+  [Referencing an image](/signatures/images/#referencing-an-image).
+- **Pick a font and a background for the signature.** Signature settings now
+  offer a list of email-safe fonts, with Custom stack… for your own, and a
+  Background colour for the whole signature. See
+  [Canvas settings](/signatures/designer/#canvas-settings).
+- **The designer points you at each problem in turn.** Choosing the things to
+  finish or dark-mode risks chip beneath the canvas now steps through each
+  problem and says what it is, instead of going back to the first one every
+  time. The text toolbar now sits in a bar above the stage, clear of the blocks.
+  See [Finding each problem](/signatures/designer/#finding-each-problem).
 - **The designer asks before it publishes.** Publish, Staged and Approve and
   publish now ask you to confirm first, as they already did in the HTML editor,
   and the buttons are unavailable while a change is still being saved. With a

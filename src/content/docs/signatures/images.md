@@ -40,7 +40,10 @@ and a [custom role](/admin/users-and-roles/#custom-roles) can be given.
 
 The new row shows the stored name and the `cid:` reference to use in a
 template. The designer's Image block has its own Upload button, which adds to
-the same library.
+the same library. The designer checks the 1 MB limit before it sends anything, so
+a file that is too big is turned away straight away with "is larger than 1 MB.
+Compress it or export it smaller." The button reads Uploading… until the upload
+finishes.
 
 Uploads are recorded in the [change log](/monitoring/change-log/) along with who
 uploaded them.
@@ -122,9 +125,21 @@ In the [designer](/signatures/designer/), add an Image block and pick the image.
 The compiler emits the same reference.
 
 1. Drag Image from the Blocks rail onto the canvas.
-2. In the inspector, under Image, pick the image from the list, or choose
-   Upload to add one from your computer.
+2. In the inspector, under Image, pick the image by name from the list. To pick
+   by sight, choose Browse and click a thumbnail. To add a new one from your
+   computer, choose Upload.
 3. Set the width and height in pixels, and the Alt text.
+
+The canvas draws the real image, as do the thumbnails, and an uploaded social
+icon shows its own picture too. Upload a new file under an existing name and
+every place showing that image picks up the new picture.
+
+Once an image is picked, the inspector shows its natural size, for example
+"Natural size 280 × 80 px". Choose Use it to set the width to that, up to the
+1,000 pixel maximum, and leave the height blank. A blank height keeps the image's
+own proportions. With both set, Keep proportions, which is on by default, changes
+one to match whenever you change the other. Turn it off to set the two
+separately.
 
 Always set an explicit `width` in pixels. Outlook does not reliably scale images
 without one, and a logo exported at 2x will render at twice the size you intended.

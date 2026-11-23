@@ -234,6 +234,9 @@ To style a block or a column:
 Buttons are the exception. A button's background colour is the button's own fill
 rather than the cell behind it, because a button already is a coloured box.
 
+A button also has Padding (across / down, px), the space between its label and
+its edges. Each value runs from 0 to 60 pixels.
+
 ## Vertical alignment
 
 Blocks and columns can both be aligned vertically, but they answer different
@@ -251,10 +254,10 @@ control saying vertical alignment needs a minimum height to work within.
 
 ## Text formatting
 
-Selecting a text block brings up a formatting toolbar inside the block itself, so
-the controls sit where you are already looking rather than at the top of the
-stage. It covers bold, italic, underline, colour, links, inserting a field and
-clearing formatting.
+Selecting a text block brings up a formatting toolbar in the bar above the stage.
+It stays there rather than floating over the canvas, so it never covers the block
+above the one you are editing. It covers bold, italic, underline, colour, links,
+inserting a field and clearing formatting.
 
 Pasting into a text block brings in the words only. Text copied from a web page,
 Word or an email carries the fonts, sizes and colours of wherever it came from,
@@ -340,8 +343,8 @@ The canvas holds the defaults every block inherits. To change them:
 
 1. Press Escape, or click an empty part of the stage, so that no block is
    selected.
-2. The inspector shows Signature settings. Width and Font stack are under
-   Canvas, Text and Links under Colours, and machine-readable contact details
+2. The inspector shows Signature settings. Width and Font are under Canvas,
+   Text, Links and Background under Colours, and machine-readable contact details
    under Contact details.
 
 What each one controls:
@@ -351,9 +354,15 @@ The overall width in pixels, which is the width of the outer table.
 The font family, the default text colour, and the default link colour. A block or
 an individual run of text can override any of them.
 
-The canvas background is always transparent. The designer has no setting for it, and
-transparent is the right default for email, because a signature sits on whatever
-background the recipient's client uses.
+Font is a list of font stacks that are safe in email, such as Aptos / Calibri /
+Arial, Segoe UI, Verdana, Georgia and Courier New. Each one names fallbacks, so a
+recipient without the first font still gets something close. To type your own
+stack, choose Custom stack… and enter it in the box that appears.
+
+Background sets a colour behind the whole signature. Leave it blank, which is the
+default, and the signature sits on the email's own background. That is almost
+always what you want, because the recipient's client decides that colour. The
+clear button next to the colour takes it back to blank.
 
 Machine-readable contact details, which is off by default. Switching it on labels
 the signature with schema.org `Person` markup, so a client or a crawler can read
@@ -705,6 +714,22 @@ The designer also badges any block likely to fail in dark mode, and shows the
 count in the footer beneath the canvas. Those badges are advice and never stop a
 publish, which is why they are worded differently from the ones that do.
 
+## Finding each problem
+
+The footer beneath the canvas counts what needs attention in two chips: things to
+finish, which stop a publish, and dark-mode risks, which do not. The block itself
+carries a badge in its corner.
+
+1. Choose the chip, for example "3 things to finish".
+2. The designer selects the first block with a problem and says what it is, such
+   as "1 of 3: button needs a link".
+3. Choose the chip again to move on to the next one. After the last, it starts
+   again from the first.
+
+Hovering over a chip lists every problem at once. The badges on the blocks are
+labels only. Clicking one selects the block underneath, as if the badge were not
+there.
+
 See [dark mode](/signatures/dark-mode/) for what the client is doing and how to
 design around it.
 
@@ -737,7 +762,9 @@ To save one:
 2. Read the message. It says how many things are still to finish, for example
    "Draft saved with 2 things still to finish."
 
-The badges on the canvas keep marking the blocks that need content. Anything
+The badges on the canvas keep marking the blocks that need content, and the
+things to finish chip takes you to each one. See
+[finding each problem](#finding-each-problem). Anything
 that is wrong rather than missing, such as a link that isn't a valid address,
 still stops the save.
 
