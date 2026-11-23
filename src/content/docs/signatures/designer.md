@@ -223,10 +223,54 @@ into it then may still carry a size of its own, which nothing else in the
 designer shows. If one link or line comes out bigger than the text around it,
 highlight it, clear its formatting, and publish.
 
-Adding a link opens a dialog rather than a browser prompt, and the dialog says so
-when nothing is selected. Linking needs selected text to attach itself to, so
-with only a cursor there is nothing to link and the old prompt looked broken
-rather than refused.
+### Line breaks and spacing
+
+Pressing Enter in a text block starts a new line within that block. A text block
+has lines, not paragraphs, so the designer inserts a line break, and that break
+is in the signature people send. Pasting text that runs over several lines, such
+as a postal address, keeps each line on its own line.
+
+Spaces are kept as you type them. Email HTML normally merges two spaces into
+one and drops a space at the start or end of a line. When you save, the designer
+turns those spaces into non-breaking spaces so they survive in the sent
+signature. A single space between two words stays an ordinary space, so long
+lines can still wrap.
+
+### Links in a text block
+
+Adding a link opens a dialog rather than a browser prompt.
+
+1. Highlight the text you want to link.
+2. Choose the link button on the text toolbar. Its tooltip reads "Add or edit a
+   link".
+3. Type or paste the address, or pick a placeholder from the
+   [field picker](#placeholders-in-links).
+4. Choose **Add link**.
+
+With nothing highlighted and the cursor outside any link, the toolbar shows
+"Highlight the text you want to link first." instead of opening the dialog.
+
+To change a link, put the cursor anywhere inside it and choose the link button.
+You don't have to highlight the whole link first. The dialog opens as
+**Edit link** with the current address filled in. Change it and choose
+**Save link**.
+
+To remove a link, do one of these:
+
+- Put the cursor in the link, or highlight it, and choose the unlink button on
+  the toolbar. Its tooltip reads "Remove the link".
+- Open the link dialog and choose **Remove link**.
+
+Removing a link keeps the text, its colour and any
+[visibility rule](#conditions-on-labels-and-separators) on it. Only the link
+goes. If the cursor isn't in a link and nothing is highlighted, the toolbar shows
+"Put the cursor in a link, or highlight one, to remove it."
+
+On the canvas, links use the link colour from
+[Canvas settings](#canvas-settings) with no underline, the same as the
+signature people receive. Text you have coloured or underlined yourself keeps
+that styling. Hovering over a link shows a dotted underline and a tooltip with
+the address it goes to. Clicking a link on the canvas never opens it.
 
 Text blocks can be sized in points as well as pixels. Points are what people
 authoring in Word and Outlook think in; pixels are what the web thinks in.
@@ -652,6 +696,11 @@ always what users are receiving.
 Opening a saved draft leaves the canvas clean, so a bar that only distinguished
 clean from dirty would read as published while showing something nobody has ever
 received.
+
+The bar compares what is on the canvas with what was last saved, not the order
+the designer happened to store things in. Typing a character and deleting it
+again leaves the bar where it was, rather than showing Unpublished changes over
+a design that hasn't changed.
 
 ## Watching a rollout from the designer
 

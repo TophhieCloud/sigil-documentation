@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 52fba58 -->
+<!-- last-portal-commit: 18cad04 -->
 <!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T09:03:17Z -->
+<!-- last-flag-check: 2026-11-23T11:26:33Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -13,6 +13,19 @@ page that covers it in full. Features still in testing are left off until they
 are available to every organisation.
 
 ## November 2026
+
+### 23 November
+
+- **Enter and spaces in the designer do what you typed.** Pressing Enter in a
+  text block starts a new line, and that line break is in the signature people
+  send. Doubled spaces and spaces at the start or end of a line
+  now survive in the signature people receive. See
+  [Line breaks and spacing](/signatures/designer/#line-breaks-and-spacing).
+- **Links in the designer can be edited and removed in place.** Put the cursor
+  in a link and choose the link button to change its address, or remove the
+  link and keep the text, its colour and its visibility rule. Links on the
+  canvas now show in the canvas link colour, and hovering shows where they go.
+  See [Links in a text block](/signatures/designer/#links-in-a-text-block).
 
 ### 19 November
 
