@@ -20,7 +20,9 @@ again for every mailbox that composed in the past week, so the record can last
 up to about two weeks after that mailbox last composed a message. The record counts as
 fresh for fifteen minutes. After that it still answers straight away while a
 fresh copy is read from Microsoft 365 in the background, so the first message of
-the day is not held up by a directory look-up. A cached signature older than an
+the day is not held up by a directory look-up. A profile photo is cached too,
+for up to seven days after it was last read from Microsoft 365, and Sigil checks
+for a newer one once the copy is a day old. A cached signature older than an
 hour is re-rendered from a fresh directory read the next time it serves, which is
 what lets a corrected job title reach Outlook, usually within an hour, with
 nobody republishing anything. The longer case is in

@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: f18159a -->
+<!-- last-portal-commit: 4ad89cd -->
 <!-- last-addin-commit: b98858e -->
-<!-- last-flag-check: 2026-11-24T17:19:37Z -->
+<!-- last-flag-check: 2026-11-24T17:27:18Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -15,6 +15,12 @@ are available to every organisation.
 ## November 2026
 
 ### 24 November
+
+- **Photo retention stated correctly.** The privacy policy's retention table now
+  says a profile photo is cached for up to seven days after it was last read
+  from Microsoft 365, refreshed once the copy is a day old. It previously said
+  24 hours. See
+  [Retention](/security/compliance/#retention).
 
 - **Privacy policy names the global caches.** The privacy policy, updated on 24
   November 2026, now says plainly that short-lived cached copies of rendered
