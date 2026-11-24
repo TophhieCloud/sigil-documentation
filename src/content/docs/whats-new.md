@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 8061254 -->
+<!-- last-portal-commit: f18159a -->
 <!-- last-addin-commit: b98858e -->
-<!-- last-flag-check: 2026-11-24T17:02:06Z -->
+<!-- last-flag-check: 2026-11-24T17:19:37Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -15,6 +15,13 @@ are available to every organisation.
 ## November 2026
 
 ### 24 November
+
+- **Privacy policy names the global caches.** The privacy policy, updated on 24
+  November 2026, now says plainly that short-lived cached copies of rendered
+  signatures, and of the directory details they are built from, can sit on
+  Cloudflare's network outside the UK and EEA. They expire on their own. The data
+  processing agreement has not changed. See
+  [Where data lives](/security/data-and-privacy/#where-data-lives).
 
 - **Taking a mailbox off the cost list by API.** Scripts that use an API key now
   remove a mailbox from the cost management list with

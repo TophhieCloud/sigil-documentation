@@ -340,9 +340,10 @@ enforces on where the data may be kept, rather than a preferred location it is
 free to ignore, and the read copies the database keeps for speed are only made
 inside the same jurisdiction.
 
-The caches are the exception, and the data processing agreement says so in its
-own words rather than leaving it to be inferred. A rendered signature and the
-directory details behind it are cached on Cloudflare's global network so that the
+The caches are the exception, and the data processing agreement and the privacy
+policy both say so in their own words rather than leaving it to be inferred. A
+rendered signature and the directory details behind it, such as a person's
+directory record and profile photo, are cached on Cloudflare's global network so that the
 first message of somebody's day is not held up by a lookup, which means those
 short-lived copies can sit outside the UK and EEA while they live. They expire on
 their own, they are rebuilt from the record rather than being it, and the record

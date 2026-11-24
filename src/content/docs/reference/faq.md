@@ -272,8 +272,9 @@ uploaded images and the nightly backups all sit in storage created in Cloudflare
 EU jurisdiction. The caches in front of them are global, because that is what
 makes a signature arrive without a wait: a rendered signature and the directory
 details behind it are cached on Cloudflare's network, can sit outside the UK and
-EEA while they live, and expire on their own. The data processing agreement says
-so in its own words rather than leaving it to be inferred.
+EEA while they live, and expire on their own. The data processing agreement and
+the privacy policy both say so in their own words rather than leaving it to be
+inferred.
 
 Three sub-processors are involved: Microsoft for identity and directory data,
 Cloudflare for hosting, storage and caching, and Stripe for billing. The agreement
