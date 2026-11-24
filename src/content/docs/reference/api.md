@@ -82,9 +82,10 @@ the preview route is the form a script can read, diff or store. See
 prose, and a script wanting what the documentation says should read the
 documentation. See [ask the documentation](/admin/ask-the-documentation/).
 
-So is `GET /api/admin/events/socket`, the connection the portal keeps open to
-hear about changes as they happen. It tells an open page to re-read something,
-which a script can do on its own schedule by calling the route it already uses.
+So are `GET /api/admin/events/ticket` and the `/api/admin/events/socket`
+connection it opens, which the portal keeps open to hear about changes as they
+happen. The connection tells an open page to re-read something, which a script
+can do on its own schedule by calling the route it already uses.
 
 `GET /api/admin/profile-values` and `PUT /api/admin/profile-values/:email` are
 out for the same reason. Those return and write what a named colleague entered
@@ -504,7 +505,7 @@ telemetry.
 | `DELETE /api/admin/link-domain` | Admin token, settings capability | Release the hostname. New links return to the shared domain, and links already sent on the branded one stop resolving |
 | `POST /api/admin/link-domain/check` | Admin token, settings capability | Re-read the certificate's state now rather than waiting for the nightly check |
 | `POST /api/admin/help/ask` | Admin token, any role | A question about the documentation, answered from `docs.usesigil.app` with the pages it drew on. Answers 404 if the feature is unavailable to the organisation, before the body is read. Not available to API keys. See [ask the documentation](/admin/ask-the-documentation/) |
-| `GET /api/admin/events/socket` | Admin token, templates, settings or billing capability | The WebSocket the portal holds open for [live updates](/signatures/publishing/#seeing-who-else-has-it-open). Each message names what changed by id and nothing more, and only reaches people who hold the capability for it. Answers 403 for a role with none of the three. Not available to API keys |
+| `GET /api/admin/events/ticket` | Admin token, templates, settings or billing capability | A single-use ticket for the WebSocket the portal holds open for [live updates](/signatures/publishing/#seeing-who-else-has-it-open), at `/api/admin/events/socket`. The portal fetches a fresh ticket before every connect and reconnect. Each message on the socket names what changed by id and nothing more, and only reaches people who hold the capability for it. Answers 403 for a role with none of the three. Not available to API keys |
 | `GET /api/admin/onboarding` | Admin token, Admin role | Getting started checklist state |
 | `POST /api/admin/onboarding/dismiss` | Admin token, Admin role | Dismiss the checklist |
 | `POST /api/admin/dpa/accept` | Admin token, Admin role | Record acceptance of the data processing agreement |
