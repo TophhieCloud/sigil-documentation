@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 3a2251c -->
+<!-- last-portal-commit: 8061254 -->
 <!-- last-addin-commit: b98858e -->
-<!-- last-flag-check: 2026-11-24T16:55:24Z -->
+<!-- last-flag-check: 2026-11-24T17:02:06Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
