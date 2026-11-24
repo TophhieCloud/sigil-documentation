@@ -314,9 +314,10 @@ may look.
 Where a template offers a [contact card link](/signatures/contact-card/), that
 link is public, because a recipient clicking it holds no credentials.
 
-The mailbox is not in the URL. It is carried in a signed token, and a token is
-only minted while rendering that mailbox's own signature, so the endpoint cannot
-be walked to enumerate a directory. A card discloses exactly the attributes the
+The mailbox is not readable from the URL. It is sealed inside an encrypted,
+signed token, so nobody who sees the link, including in a request log, can tell
+whose card it is. A token is only minted while rendering that mailbox's own
+signature, so the endpoint cannot be walked to enumerate a directory. A card discloses exactly the attributes the
 signature itself prints, to somebody who already has the signature.
 
 Nothing about a fetch is logged as an event. Sigil does not record who downloaded

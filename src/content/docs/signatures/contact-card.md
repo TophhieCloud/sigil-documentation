@@ -138,9 +138,10 @@ contact to carry it.
 
 The link is public, because a recipient clicking it holds no Sigil credentials.
 
-The mailbox is not in the URL. It is carried in a signed token, and Sigil only
-ever mints a token while rendering that mailbox's own signature. So the only
-cards that can be fetched are ones somebody was actually sent.
+The mailbox is not readable from the URL. It is sealed inside an encrypted,
+signed token, so the link can't be forged and doesn't show whose card it is.
+Sigil only ever mints a token while rendering that mailbox's own signature, so
+the only cards that can be fetched are ones somebody was actually sent.
 
 That is the whole design. An unsigned link of the form
 `/vcf/<organisation>/<address>` would be a directory lookup for anybody willing
