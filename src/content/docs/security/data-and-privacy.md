@@ -173,8 +173,9 @@ is purged with everything else on deprovision.
 
 No tokens. No rendered signature HTML in the telemetry. No message content.
 
-"No tokens" is about Sigil's own storage. Microsoft's sign-in library keeps a
-token cache of its own on the device, which is covered in
+"No tokens" is about Sigil's own storage. On the device, the add-in keeps an
+encrypted copy of the person's access token between messages, and Microsoft's
+sign-in library keeps a token cache of its own. Both are covered in
 [the copy kept on the device](#the-copy-kept-on-the-device) below.
 
 No passwords, because there are none. People authenticate entirely through
@@ -229,17 +230,28 @@ asked about on every message. It records which of the two kinds of refusal it
 was and when, and no more than that. See
 [a refusal is remembered for ten minutes](/start/how-it-works/#a-refusal-is-remembered-for-ten-minutes).
 
-Separately, Microsoft's sign-in library keeps its own cache of the access token
-the add-in uses, so that a token is brokered when one expires rather than on
-every message. On Outlook on the web, new Outlook, Mac and mobile it is held in
-browser storage under the add-in's origin, encrypted by the library with a key
-it holds in a session cookie; classic Outlook on Windows has no browser storage
-and the cache lives only as long as the message being written. The tokens are Microsoft's,
-issued by Entra for the person signed in, and Sigil neither reads them from that
-cache nor stores them anywhere of its own. Where the browser refuses the storage,
-the library falls back to keeping them in memory for one message.
+The add-in also keeps the access token it uses to ask Sigil for a signature, so
+the next message does not have to wait for Outlook to issue a new one. This
+applies on Outlook on the web, new Outlook, Mac and mobile; classic Outlook on
+Windows has no browser storage and asks for a token on every message. The token
+is held in browser storage under the add-in's origin, encrypted with a key that
+is created on the device and cannot be read back out of it, only used. It is
+kept only when the token belongs to the address it was asked for, so a token
+obtained while writing from a shared mailbox is never kept, and it is thrown
+away five minutes before it expires. If Sigil refuses a kept token, the add-in
+deletes it and gets a new one from Outlook. The tokens are issued by Entra for
+the person signed in, and they never leave the device except to make that
+request.
 
-Nothing about the copy is sent anywhere. It is written and read on the device,
+Separately, Microsoft's sign-in library keeps its own cache of tokens. On
+Outlook on the web, new Outlook, Mac and mobile it is held in browser storage
+under the add-in's origin, encrypted by the library with a key it holds in a
+session cookie; on classic Outlook on Windows it lasts only as long as the
+message being written. Sigil does not read that cache. Where the browser refuses
+the storage, the library falls back to keeping tokens in memory for one
+message.
+
+Nothing about the kept signature is sent anywhere. It is written and read on the device,
 and Sigil learns only whether a compose used one, as part of the
 [telemetry](#telemetry) below.
 

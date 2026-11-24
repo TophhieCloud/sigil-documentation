@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: b4bad75 -->
-<!-- last-addin-commit: e942a93 -->
-<!-- last-flag-check: 2026-11-23T16:46:56Z -->
+<!-- last-portal-commit: 67b332d -->
+<!-- last-addin-commit: 88c13f1 -->
+<!-- last-flag-check: 2026-11-24T09:04:37Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -78,6 +78,12 @@ are available to every organisation.
   link and keep the text, its colour and its visibility rule. Links on the
   canvas now show in the canvas link colour, and hovering shows where they go.
   See [Links in a text block](/signatures/designer/#links-in-a-text-block).
+- **The add-in reuses its token between messages.** On Outlook on the web, new
+  Outlook, Mac and mobile, the add-in now keeps an encrypted copy of the token it
+  uses to fetch your signature, so the next message doesn't wait for Outlook to
+  issue a new one. It is never kept for a shared mailbox, and is discarded five
+  minutes before it expires. See
+  [The copy kept on the device](/security/data-and-privacy/#the-copy-kept-on-the-device).
 
 ### 19 November
 

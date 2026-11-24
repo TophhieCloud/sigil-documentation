@@ -17,7 +17,9 @@ appearing at the bottom of somebody's email.
    covers new messages, replies and forwards, and on `OnMessageFromChanged` when
    the sending account switches. No clicks, no task pane.
 3. The add-in acquires an Entra access token silently, using MSAL nested app
-   authentication (NAA) brokered by Outlook.
+   authentication (NAA) brokered by Outlook. Outside classic Outlook on Windows,
+   a token kept from an earlier message is reused until shortly before it
+   expires; see [the copy kept on the device](/security/data-and-privacy/#the-copy-kept-on-the-device).
 4. The add-in calls the signature API. The API verifies the token, reads that
    person's directory attributes from Microsoft Graph, and merges them into the
    template that applies to them. The result is Outlook-safe HTML with any
