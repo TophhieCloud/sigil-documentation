@@ -87,7 +87,7 @@ connection it opens, which the portal keeps open to hear about changes as they
 happen. The connection tells an open page to re-read something, which a script
 can do on its own schedule by calling the route it already uses.
 
-`GET /api/admin/profile-values` and `PUT /api/admin/profile-values/:email` are
+`GET /api/admin/profile-values` and `PUT /api/admin/profile-values` are
 out for the same reason. Those return and write what a named colleague entered
 about themselves, which is the same per-individual read, and arguably more
 personal for having been typed by the person rather than held by the directory.
@@ -101,7 +101,7 @@ or compose mail; `POST /api/admin/banners/:id/preview`, which renders the
 caller's own signature and so needs a caller who has one; every billing route that writes to Stripe, along with the
 invoice and credit lists, whose rows carry links that pay an invoice and the
 commercial reasoning behind concessions; `PUT /api/admin/users`
-and `DELETE /api/admin/users/:email`; the custom role routes that write; `PUT /api/admin/settings`, `GET /api/admin/approvals`
+and `POST /api/admin/users/remove`; the custom role routes that write; `PUT /api/admin/settings`, `GET /api/admin/approvals`
 and the draft submit and reject routes; `POST /api/admin/dpa/accept`; everything
 under `/api/admin/managed`, `/api/admin/partner` and `/api/admin/platform`; the
 onboarding routes; and the `/api/admin/api-keys` routes themselves. See
@@ -491,13 +491,13 @@ telemetry.
 | --- | --- | --- |
 | `GET /api/admin/me` | Admin token | Who the caller is, their role, and their organisation's state |
 | `GET /api/admin/flags` | Admin token | Which features being rolled out gradually are switched on for this organisation. Reachable with an API key of any scope |
-| `GET/PUT /api/admin/users`, `DELETE /api/admin/users/:email` | Admin token, users capability | Manage users and roles |
+| `GET/PUT /api/admin/users`, `POST /api/admin/users/remove` | Admin token, users capability | Manage users and roles. To remove someone, send `{ "email": "..." }` to `POST /api/admin/users/remove`. A body with no address answers 400 |
 | `GET /api/admin/users/search` | Admin token, templates or users capability | Directory lookup, for pickers such as download and test email |
 | `GET /api/admin/custom-roles` | Admin token, users capability | The organisation's [custom roles](/admin/users-and-roles/#custom-roles): each one's key, name, description, capabilities and how many people hold it. A holder's `role` on `GET /api/admin/users` is that key, `custom:` followed by twelve characters, and `roleName` carries the role's name |
 | `POST /api/admin/custom-roles`, `PUT/DELETE /api/admin/custom-roles/:id` | Admin token, Admin role | Define, change or delete a custom role. Answers 409 for a duplicate name, at the limit of 20, or when deleting a role somebody still holds |
 | `GET/PUT /api/admin/settings` | Admin token, settings capability | The organisation-wide switches: publish approval, profile editing, product update emails, and the digest's frequency and day (`digestWeekday` 1 to 7 from Monday, `digestMonthDay` 1 to 28). The response also carries `digestNextDueAt` |
 | `GET /api/admin/profile-values` | Admin token, staff profile details capability | Every mailbox with stored [profile values](/admin/profile-fields/), each with its completion count, and the enabled field definitions to label them with |
-| `PUT /api/admin/profile-values/:email` | Admin token, staff profile details capability | Edit a colleague's values on their behalf, or enter them for a mailbox that has none yet. The address must exist in the directory, and a secondary alias is stored against the mailbox's primary address. Validated exactly as the colleague's own save is, and recorded in the change log |
+| `PUT /api/admin/profile-values` | Admin token, staff profile details capability | Edit a colleague's values on their behalf, or enter them for a mailbox that has none yet. The body carries the mailbox as `email` beside its `values`. The address must exist in the directory, and a secondary alias is stored against the mailbox's primary address. Validated exactly as the colleague's own save is, and recorded in the change log |
 | `GET /api/admin/settings/digest/preview` | Admin token, settings capability | The [health digest](/monitoring/health-digest/) as it would be sent now. Sends nothing |
 | `POST /api/admin/settings/digest/send` | Admin token, settings capability | Mail the digest to the calling admin alone |
 | `GET /api/admin/link-domain` | Admin token, settings capability | The organisation's [branded link domain](/monitoring/branded-link-domain/): the hostname, how far its certificate has got, the CNAME target a new one points at, and whether the add-on is held. `domain` is null while links are still on the shared hostname, which the response names |
@@ -523,7 +523,7 @@ telemetry.
 | `GET /api/admin/exclusions` | Admin token, cost management capability | The cost management list and the mode that says how it is read: the individually listed mailboxes, each annotated with whether it still resolves in the directory and whether it was billable, the listed groups, the totals across both, and the seats the list bills |
 | `PUT /api/admin/exclusions/mode` | Admin token, cost management capability | Switch between exclusion mode and inclusion mode. Refused while anything is on the list |
 | `POST /api/admin/exclusions` | Admin token, cost management capability | Put one mailbox or many on the list, with an optional note. In exclusion mode that excludes them, in inclusion mode it includes them |
-| `DELETE /api/admin/exclusions/:email` | Admin token, cost management capability | Take one off the list |
+| `POST /api/admin/exclusions/remove` | Admin token, cost management capability | Take one mailbox off the list, named in the body as `{ "email": "..." }`. A body with no address answers 400. This lifts only a mailbox listed on its own: one also covered by a listed group stays on the list. This route replaced `DELETE /api/admin/exclusions/:email` on 24 November 2026, and the old path now answers 404 |
 | `GET /api/admin/billing/mailboxes` | Admin token, cost management capability | Every mailbox that counts as a seat right now, with name, job title and department, sorted by address. Read live from the directory, so it can run ahead of the nightly count the bill uses. Answers 502 rather than an empty list when the directory cannot be read |
 | `GET /api/admin/exclusions/suggested` | Admin token, cost management capability | Billable mailboxes that have never applied a signature, and what excluding them would save. Refused in inclusion mode, where the question has no counterpart |
 | `POST /api/admin/exclusions/groups` | Admin token, cost management capability | Put an Entra group's members on the list. The group is confirmed against the directory, and its membership resolved, before the call returns |
@@ -580,7 +580,7 @@ tenant. They live under `/api/admin/partner`.
 | `GET /billing/invoices`, `GET /billing/adjustments` | The partner account's invoice history, and the credits applied to it |
 | `GET /usage`, `GET /usage/export` | Per-client seat counts, and the CSV for rebilling |
 | `GET /usage/periods` | The periods already invoiced, as reconciliation windows for the report. Empty rather than an error when the invoices cannot be read |
-| `GET/PUT /staff`, `DELETE /staff/:email` | Partner staff and their roles |
+| `GET/PUT /staff`, `POST /staff/remove` | Partner staff and their roles. `POST /staff/remove` takes the address in the body as `{ "email": "..." }` |
 | `GET/PUT /preferences` | Whether the partner's own Owners and Admins receive [product update emails](/admin/emails-sigil-sends/#product-updates). Owners only, like the staff list |
 | `GET /events` | The partner-level audit trail |
 | `POST /agreement/accept` | Record acceptance of the partner agreement |
