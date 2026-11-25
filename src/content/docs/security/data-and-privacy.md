@@ -527,6 +527,13 @@ audit log keeps its record of any action its staff took on your organisation,
 because the record of a purge has to survive the purge. Your own copy of those
 entries, in your change log, is purged with everything else.
 
+That operator record keeps what was done, when, by which member of Tophhie Cloud
+staff, and to which organisation by its internal reference. It does not keep your
+people. Their addresses are held there only in a scrambled form, and the purge
+replaces even that, so nothing in the record points back to a person in
+your organisation. Your organisation's name is not stored in it either. The
+operator log is deleted six years after each entry.
+
 Those three are the whole list, and it is enforced rather than promised. Every
 place Sigil stores something against an organisation is either purged or named as
 a deliberate exception, and an automated check refuses any new storage that is
@@ -582,8 +589,14 @@ cancelling a subscription leaves nobody being charged, whereas one that deleted
 the records first would leave a live subscription that nothing could be traced
 back to.
 
-Where a deprovision is scheduled rather than immediate, the purge checks that the
-deletion is still scheduled before it destroys anything. An organisation restored
+Stored images get the same care. If they cannot be deleted, the purge stops
+before the records go and tries again the next night, because the records are
+what let a later attempt find the images.
+
+Where a deprovision is scheduled rather than immediate, the purge runs no more
+than 29 days later, so your data is gone within the 30 days the data processing
+agreement allows, with a day to spare. The first deletion email names that day.
+The purge checks that the deletion is still scheduled before it destroys anything. An organisation restored
 during its grace window is safe even if a purge had already been queued for it.
 Once the purge has actually started, though, the organisation can no longer be
 restored, because some of its data may already be gone. Ask before the named day

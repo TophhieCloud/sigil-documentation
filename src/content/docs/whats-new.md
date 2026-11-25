@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: c61b49e5 -->
+<!-- last-portal-commit: c15b9fb -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-25T17:00:55Z -->
+<!-- last-flag-check: 2026-11-25T17:32:11Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,11 @@ are available to every organisation.
 
 ### 25 November
 
+- **Deletion grace window is now 29 days.** When your organisation is scheduled
+  for deletion, the purge now runs no more than 29 days later rather than 30, so
+  your data is gone within the 30 days the data processing agreement allows. The
+  first deletion email names the day. See
+  [Deleting your data](/security/data-and-privacy/#deleting-your-data).
 - **Recycle bin covers templates only.** The privacy policy's retention table
   now says that only a deleted template sits in Recently deleted for 30 days. A
   deleted footer, banner or image is removed straight away and cannot be

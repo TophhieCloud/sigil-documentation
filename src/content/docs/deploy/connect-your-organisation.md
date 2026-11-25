@@ -364,7 +364,8 @@ Coming back after the purge is a new signup rather than a restoration. Granting
 consent again provisions a fresh organisation, with a fresh trial and no
 templates, rules or history from before.
 
-A deprovision normally waits out a grace window of 30 days before the purge runs.
+A deprovision normally waits out a grace window of 29 days before the purge runs,
+so the data is gone within the 30 days the data processing agreement promises.
 During that window your organisation is still on record as awaiting deletion, so
 granting consent again does not start a new signup, as described
 [above](#what-re-consenting-cannot-fix). If you want to come back sooner, ask support
