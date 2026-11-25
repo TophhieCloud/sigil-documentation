@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 6c04b84 -->
+<!-- last-portal-commit: 4630882b -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-25T15:45:43Z -->
+<!-- last-flag-check: 2026-11-25T16:19:29Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -13,6 +13,14 @@ page that covers it in full. Features still in testing are left off until they
 are available to every organisation.
 
 ## November 2026
+
+### 25 November
+
+- **Recycle bin covers templates only.** The privacy policy's retention table
+  now says that only a deleted template sits in Recently deleted for 30 days. A
+  deleted footer, banner or image is removed straight away and cannot be
+  brought back. See
+  [Retention](/security/compliance/#retention).
 
 ### 24 November
 

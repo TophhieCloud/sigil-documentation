@@ -375,6 +375,7 @@ administrators a re-consent link.
 | Template version history | Last 10 published bodies per template |
 | Preview pictures of a version, for [signature previews](/signatures/previews/) | As long as the version they show. They depict a sample person rather than anybody in your organisation |
 | Deleted templates | 30 days in Recently deleted, then purged by a daily sweep |
+| Deleted footers, banners and images | Removed straight away. Only templates go to Recently deleted, so a deleted footer, banner or image cannot be brought back |
 | Change log | For as long as your organisation uses Sigil |
 | Record of the notices the agreements require Tophhie Cloud to send you, such as a breach notice or notice of a change to an agreement | For as long as your organisation uses Sigil. Holds what was sent, when, and to which addresses |
 | Record of the emails Sigil sends about your organisation's account | For as long as your organisation uses Sigil. Holds what each email was, when it was sent, to which addresses, and whether it was delivered. A copy of the email itself is kept for 90 days, so support can see what you were sent when you ask about it, and is then removed |
