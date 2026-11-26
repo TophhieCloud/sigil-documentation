@@ -159,15 +159,21 @@ on or after 1 Oct 2026." Once it has moved, the sentence stands on its own.
 ### Checking the period so far
 
 The figures on the Your subscription tab of Partner billing show where the
-current period stands.
+current period stands. They sit in a row of tiles across the top of the tab, and
+some tiles only appear when they apply, so the row's length varies. The pricing
+note and the billing buttons sit in a strip beneath them.
 
 | Figure | What it shows |
 | --- | --- |
-| Seats in use | Today's billable mailboxes across every client |
+| Status | Your partner subscription's state: Active, Trial, Not set up, Payment failed or Cancelled. Not set up is shown in the warning colour, and Payment failed and Cancelled in red |
+| Seats in use | Today's billable mailboxes across every client, with how many clients that covers, as in "across 12 clients" |
 | Average this period | The average so far, to two decimal places, with how many days have been measured. It shows a dash until the first night of the period has been measured. Where a [prepaid block](#prepaid-mailboxes-for-a-client) applies, this is the average after the block, and the average as measured is shown beside it, as in "34.20 measured, before prepaid" |
 | Prepaid mailboxes | Only shown while one of your clients has a prepaid block. The prepaid mailboxes across all your clients today, "netted off your clients' usage" |
 | This month, estimated | Your seats and any [add-ons](#add-ons-on-a-client) for the period so far, at your rates and less your partner discount. Seats are the average so far, after any prepaid block; before your account moves to the average, they are today's count instead. When add-ons are part of the figure, a line below splits it, as in "£0.00 seats + £12.00 add-ons". While a [change of invoice date](#changing-your-invoice-date) is cutting the period short, it is scaled to the days that invoice covers and reads, for example, "for 9 of 31 days" |
 | Next invoice | The date your next invoice is raised, with the day of the month invoices fall on, as in "on the 1st of each month". While a change of invoice date is waiting, it shows that change's day instead, with "invoice date moving to the 1st" |
+| Partner discount | Only shown when you have one. The percentage, and the date it ends if it has an end date |
+| Card on file | Yes, with the card it holds below, as in "Visa ending 4242, expires 04/28", or No in the warning colour. On invoice terms this tile reads Payment instead, showing Invoice and your terms, as in "net 30 days" |
+| Credit on account | Only shown while a credit is waiting. The amount, "off the next invoice" |
 
 The estimate moves as the month goes on, and comes close to the invoice once
 the period's last day is measured. Add-ons are counted the way they are
