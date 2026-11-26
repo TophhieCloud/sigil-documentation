@@ -25,7 +25,7 @@ Settings is split into tabs along the top of the page, the same way Billing is:
 | General | Require approval to publish, and profile editing |
 | Emails | Product update emails, and the health digest |
 | Link domain | The [branded link domain](#the-link-domain-tab) card |
-| Support access | Sigil support access, and the support sessions open now |
+| Support access | Sigil support access, and the support sessions open now. In an organisation [managed by a partner](#partner-access), the tab is called Partner & support access and also holds the Partner access card |
 
 The tab you are on is part of the page address, so reloading keeps you there
 and a link can open a tab directly. The link in every health digest opens the
@@ -180,7 +180,8 @@ can change it too. Support can never change it, and nor can an
 
 To turn it on:
 
-1. Open Settings in the portal sidebar and choose the Support access tab.
+1. Open Settings in the portal sidebar and choose the Support access tab
+   (Partner & support access if a partner manages your organisation).
 2. Under the switch, beside Switch on for, choose how long from the list: 1, 4,
    8 or 24 hours. It starts at 4.
 3. Turn on Allow Sigil support to make changes.
@@ -214,6 +215,34 @@ Support also shows up in the template editor when they are making changes. If
 someone in an edit session opens a template you have open, the line under its
 name reads "Sigil support is also editing this template." A read-only session
 never appears there, because support is only looking.
+
+## Partner access
+
+If a [managed service provider](/partners/overview/) runs Sigil for your
+organisation, the Support access tab is called Partner & support access, and a
+Partner access card sits above Sigil support access. It names your provider and
+says that they configure your signatures on your behalf. The audit log link on
+the card opens your [audit log](/monitoring/change-log/#filtering-the-log)
+showing only the changes your provider made.
+
+The sidebar also shows who manages your account, as a Managed by chip just above
+your own name. Choose it to read a short explanation, with See their changes,
+which opens the same filtered audit log, and, for an Admin, Partner access
+settings, which opens this tab.
+
+The card is also where you end the arrangement. Only an Admin can do it; anyone
+else sees "Only an admin can remove their access."
+
+1. Open Settings in the portal sidebar and choose the Partner & support access
+   tab.
+2. On the Partner access card, choose Remove their access.
+3. Choose Remove access in the confirmation.
+
+The confirmation explains that your organisation goes back to its own Sigil
+subscription, so add a payment method in [Billing](/admin/billing/) to keep
+signatures running. See
+[a client can end it too](/partners/clients/#a-client-can-end-it-too) for what
+happens next.
 
 ## The Link domain tab
 

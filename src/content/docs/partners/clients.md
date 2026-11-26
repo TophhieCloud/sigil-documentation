@@ -291,6 +291,9 @@ cannot answer on their behalf.
    reads that your organisation has asked to manage their Sigil account.
 2. They choose Approve or Decline.
 
+Anyone else at the client sees the same card without the buttons, with a note
+that an admin in their organisation can approve or decline it.
+
 Nothing moves until it is approved. A transfer request is a request, not a claim.
 
 Approving it stops the organisation's own subscription before its seats move onto
@@ -405,10 +408,16 @@ A managed client's own administrator can remove your access without asking you.
 
 On their side it takes an Admin.
 
-1. The client administrator signs in to the Sigil portal. A card at the top
-   reads Managed by, followed by your organisation's name.
-2. They choose Remove their access.
+1. The client administrator signs in to the Sigil portal and opens Settings,
+   then the Partner & support access tab.
+2. On the Partner access card, which names your organisation, they choose
+   Remove their access.
 3. They choose Remove access in the confirmation.
+
+Once approved, the client no longer sees a card at the top of every page. The
+sidebar shows a Managed by chip with your organisation's name, and their audit
+log can show only the changes your staff made. See
+[partner access](/admin/settings/#partner-access).
 
 That is deliberate rather than an oversight. The client is the data controller,
 and a controller has to be able to end a processor relationship it no longer

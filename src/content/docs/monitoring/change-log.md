@@ -291,7 +291,7 @@ It used to be two cards at the foot of the
 reaching people, which is a different question from who changed what, and the
 change log had outgrown the space at the bottom of somebody else's page.
 
-Three filters narrow it, and they combine.
+Four filters narrow it, and they combine.
 
 By half. Template changes carries the actions that alter what goes out on
 somebody's mail: the whole template lifecycle, publishes and rollbacks, drafts,
@@ -304,6 +304,12 @@ profile field definitions, settings, test emails, and anything Tophhie Cloud
 support did. Sending a test email is the clearest case of the line being drawn
 correctly. It is worth recording, it belongs on this side, and it changes nothing
 about anyone's signature.
+
+By whose change. Made by narrows the log to changes from your own
+organisation, from Sigil support, or, if a
+[partner manages your organisation](/partners/overview/), from your provider,
+listed under its name. The provider choice stays in the list after a provider's
+access ends, as long as their past changes are loaded.
 
 By who, matching on either the name or the address.
 
@@ -326,10 +332,17 @@ custom role given it.
 1. Open Audit log in the portal sidebar, under Monitoring.
 2. Under Show, choose Everything, Template changes, or Organisation, access &
    support.
-3. Under Who, type part of a name or address.
-4. Under Action, pick one. The list is grouped into the same two halves and
+3. Under Made by, choose Anyone, Your organisation, Sigil support or, for a
+   partner-managed organisation, your provider's name.
+4. Under Who, type part of a name or address.
+5. Under Action, pick one. The list is grouped into the same two halves and
    only names actions present in what is loaded.
-5. To keep the result, choose Download CSV.
+6. To keep the result, choose Download CSV.
+
+The Made by choice is part of the page address, so a link can open the log
+already showing only your provider's changes. The Managed by chip in the
+sidebar and the [Partner access card](/admin/settings/#partner-access) in
+Settings both link that way.
 
 The table narrows as you type or choose, and says Nothing matches those
 filters when the combination leaves nothing. Prev and Next page through longer

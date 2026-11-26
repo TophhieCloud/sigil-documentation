@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: a0e7933 -->
+<!-- last-portal-commit: 1c37625 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-26T12:12:12Z -->
+<!-- last-flag-check: 2026-11-26T12:32:04Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 26 November
 
+- **Who manages your account, out of the way.** If a partner manages your
+  organisation, the Managed by notice has moved from the top of every page to a
+  chip in the sidebar, and removing their access is now on a Partner access card
+  in Settings, on the tab now called Partner & support access. The audit log has
+  a Made by filter for changes from your organisation, your provider or Sigil
+  support. See [Partner access](/admin/settings/#partner-access).
 - **A readable privacy report, and request tracking.** Privacy requests now has
   Look up and Erasure requests tabs. After a look-up you can download a
   readable report to send the person, which names other people by their role
