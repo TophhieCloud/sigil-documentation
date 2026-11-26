@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: f145459 -->
+<!-- last-portal-commit: 3cf86bc -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-26T10:45:58Z -->
+<!-- last-flag-check: 2026-11-26T11:27:41Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,18 @@ are available to every organisation.
 
 ### 26 November
 
+- **A readable privacy report, and request tracking.** Privacy requests now has
+  Look up and Erasure requests tabs. After a look-up you can download a
+  readable report to send the person, which names other people by their role
+  instead of their address, and note your ticket reference and the day the
+  request came in so the page shows when the reply is due. The Erasure requests
+  tab lists every erasure with its due date and can tell you whether an address
+  was erased. See [Privacy requests](/admin/privacy-requests/#erasure-requests).
+- **Each row says what erasure does to it.** The look-up's table now gives, for
+  each kind of record, how many Sigil holds, how long it is kept, and whether
+  erasing deletes it, replaces the name with a reference, keeps it or lists it
+  for you to edit. Every look-up is now recorded in your change log. See
+  [What Sigil holds](/admin/privacy-requests/#what-sigil-holds).
 - **Privacy requests in the portal.** Admins, and a partner's Owners and Admins
   working in a client, can now look a person up by email address, see what
   Sigil holds about them, export it as a JSON file, or erase it. Erasing asks

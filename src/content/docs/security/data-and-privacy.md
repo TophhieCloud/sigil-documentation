@@ -470,7 +470,9 @@ support](/monitoring/change-log/#actions-taken-by-tophhie-cloud-support).
 Your administrators can answer most access and erasure requests themselves,
 from [Privacy requests](/admin/privacy-requests/) in the portal. They look a
 person up by email address, see what Sigil holds about them, and export it as a
-JSON file or erase it. You can still ask support to run either for you.
+JSON file or erase it. They can also download a readable report to send to the
+person, which names other people in the records by their role rather than their
+address. You can still ask support to run an export or erasure for you.
 
 The lookup covers the person's aliases and earlier addresses as well as the one
 typed in. The export holds:

@@ -48,7 +48,7 @@ organisation.
 | Listing an Entra group in cost management, and every later change to who it covers | Yes |
 | Changing the cost management mode | Yes |
 | Creating or revoking an API key | Yes |
-| Exporting or erasing one person's data from [Privacy requests](/admin/privacy-requests/) | Yes |
+| Looking up, exporting, downloading a report for, or erasing one person's data from [Privacy requests](/admin/privacy-requests/) | Yes |
 | Adding, changing, hiding or deleting a profile field | Yes |
 | An administrator editing a colleague's profile values | Yes |
 | A person editing their own profile values | No |
