@@ -380,7 +380,8 @@ Owner and Billing roles can edit it.
 2. Under Billing details, fill in Company name (legal), Billing email, Address
    line 1, City, Postcode and Country. VAT number, Purchase order number,
    Address line 2 and Region / county are optional.
-3. Choose Save billing details.
+3. Choose Save billing details. The button stays greyed out until all six
+   required fields are filled in, and the form names any that are still empty.
 
 The confirmation reads "Billing details saved." If the push to Stripe failed,
 it says so instead and asks you to save again later. The Add your invoice

@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 500c343 -->
+<!-- last-portal-commit: f145459 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-26T09:06:53Z -->
+<!-- last-flag-check: 2026-11-26T10:45:58Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -33,6 +33,12 @@ are available to every organisation.
   from their sign-in token, and only while they have portal access. Once their
   access ends, the change log shows their address alone. See
   [Who each entry names](/monitoring/change-log/#who-each-entry-names).
+- **Billing details need every required field to save.** Save billing details
+  now stays greyed out until the legal company name, billing email, address
+  line 1, city, postcode and country are all filled in, and the form names any
+  that are missing. This applies on Billing, Partner billing and the getting
+  started checklist. See
+  [When it counts as complete](/admin/billing-profile/#when-it-counts-as-complete).
 
 ### 25 November
 

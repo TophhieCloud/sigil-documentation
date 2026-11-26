@@ -72,6 +72,16 @@ marks each of those as required. The VAT number is the one field left out,
 because an invoice can be issued without it but cannot be addressed or delivered
 without the rest. The country also decides how tax is charged.
 
+A save needs all six. While any are empty, a line under the form names them, for
+example "Billing email is required." or "City and postcode are required.", and
+the Save billing details button stays greyed out. Hovering over the button shows
+the same line. A partly filled save is refused, because a form that accepted
+one would look saved while adding a card was still refused.
+
+The pre-filled profile can still be incomplete, because Entra has no billing
+email to give. The same goes for a profile last edited in the Stripe customer
+portal. In both cases the form names what is missing the next time you open it.
+
 Until it is complete, the [getting started
 checklist](/admin/getting-started-checklist/) shows the billing details step as
 outstanding, and a prompt sits at the top of every page in the portal for anybody
@@ -178,7 +188,9 @@ completing the pre-filled profile for the first time or correcting it later.
    are optional.
 4. Add a VAT number if you are registered for one, and a Purchase order
    number if your invoices need one. Both are marked optional.
-5. Choose Save billing details.
+5. Check the form no longer names a missing field. Save billing details stays
+   greyed out until all six required fields are filled in.
+6. Choose Save billing details.
 
 A "Billing details saved." message confirms it, and the tab shows when the
 profile was last updated. If the trial had been set to end for want of the

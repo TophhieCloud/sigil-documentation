@@ -405,7 +405,10 @@ billing group for those organisations, since there is nothing to pay.
 A comped organisation, and Tophhie Cloud's own, can still keep a card and
 billing details on file. The plan card has a payment section showing whether a
 card is on file and whether the billing details are complete, with Add payment
-method and Add billing details buttons. A note under it reads "Nothing is
+method and Add billing details buttons. Billing details read Complete, Not
+added, or Incomplete when a saved or pre-filled profile still lacks something.
+Incomplete names the missing fields, and the button then reads Complete billing
+details. A note under it reads "Nothing is
 charged while your plan is free. A saved card is only used for add-ons you
 choose, or if your plan changes." None of it is required. The Billing details
 tab is there too, and Documents appears once Stripe holds a customer record for
