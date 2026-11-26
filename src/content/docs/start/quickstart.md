@@ -71,6 +71,29 @@ entry in the sidebar, so an empty portal is never where you start. Each step's
 completion is worked out from real state rather than being ticked off by hand,
 so the list stays honest.
 
+### Finding your way around
+
+The sidebar groups the portal's pages into sections such as Signature,
+Monitoring and Organisation. You only see the pages your role can open.
+
+The header at the top of each page shows where you are as a breadcrumb: the
+sidebar section, then the page, for example "Organisation › Billing". On a page
+you reach from a list, the list page sits in between as a link back, so a
+template in the editor shows "Signature › Templates › Editor" and one link's
+detail page shows "Monitoring › Link clicks › Link detail". To go back to the
+list:
+
+1. Choose the list page's name in the header, such as Templates or Link clicks.
+
+The sidebar keeps the list page highlighted while you are on one of its detail
+pages. On a phone the header has room for the page name only, so open the menu
+to move between pages.
+
+On a large monitor each page keeps to a centred column instead of stretching to
+the edges of the window. Forms and settings pages, such as Billing, Settings and
+Privacy requests, use a narrower column. Tables, logs, analytics and the
+template editor get a wider one, and most other pages sit between the two.
+
 ## 3. Design your signature
 
 Open Templates. You already have a starter template. From here you can either

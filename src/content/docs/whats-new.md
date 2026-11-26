@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 1c37625 -->
+<!-- last-portal-commit: c52b212 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-26T12:32:04Z -->
+<!-- last-flag-check: 2026-11-26T15:48:47Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 26 November
 
+- **A breadcrumb in the header, and pages sized to fit.** The portal header now
+  shows where you are, such as "Organisation › Billing", and on a detail page it
+  links back to the list, as in "Monitoring › Link clicks › Link detail". On a
+  large monitor each page keeps to a centred column, narrower for forms and
+  settings and wider for tables, logs and the template editor. See
+  [Finding your way around](/start/quickstart/#finding-your-way-around).
 - **Who manages your account, out of the way.** If a partner manages your
   organisation, the Managed by notice has moved from the top of every page to a
   chip in the sidebar, and removing their access is now on a Partner access card
