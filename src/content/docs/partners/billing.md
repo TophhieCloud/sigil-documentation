@@ -8,6 +8,32 @@ sidebar:
 A partner receives one bill covering every managed client. Individual clients
 have no subscription of their own.
 
+## The Partner billing page
+
+Partner billing is in the portal sidebar for the Owner and Billing
+[roles](/partners/roles/). The page is split into four tabs:
+
+| Tab | What it holds |
+| --- | --- |
+| Your subscription | Any payment warnings, the [figures for the period so far](#checking-the-period-so-far), your partner discount, the card on file or your invoice terms, and the buttons for the card and Stripe's customer portal |
+| Seats by client | Today's billable mailboxes for each client, with a badge on any client that has a [prepaid block](#prepaid-mailboxes-for-a-client) |
+| Billing details | The [details your invoices are addressed to](#your-invoice-details) |
+| Documents | Your [invoices and credits](#how-you-pay). It only appears once your partner subscription exists |
+
+The page opens on Your subscription. The tab you have open is kept in the
+address bar, so a reload or a bookmarked link opens the same tab. A link with
+`?tab=documents` on the end, for example, opens Documents.
+
+A tab that needs something from you carries a "!" marker. Hover over it to see
+why:
+
+- Your subscription shows it when a payment has failed ("A payment has failed")
+  or when there is no card on file ("No payment method on file").
+- Billing details shows it while your invoice details are incomplete ("Billing
+  details are incomplete").
+
+Refresh seats sits beside the page title on every tab.
+
 ## How it works
 
 Each managed client's billable seats are counted the same way as for a direct
@@ -132,8 +158,8 @@ on or after 1 Oct 2026." Once it has moved, the sentence stands on its own.
 
 ### Checking the period so far
 
-The figures at the top of the Partner billing page show where the current period
-stands.
+The figures on the Your subscription tab of Partner billing show where the
+current period stands.
 
 | Figure | What it shows |
 | --- | --- |
@@ -151,7 +177,7 @@ few days, so a rollout that is still under way pulls it about.
 If the numbers look stale, Owner and Billing staff can ask for a fresh count:
 
 1. Open Partner billing in the portal sidebar.
-2. Choose Refresh seats.
+2. Choose Refresh seats, beside the page title. It is there on every tab.
 
 Refresh seats only has something to do on a day that nothing has measured or
 reported yet, such as after a missed night. It then measures today, reports the
@@ -252,8 +278,8 @@ to. If Tophhie Cloud ends a block early, the same people are emailed that it has
 ended and the day it stopped applying. The email goes to whoever paid for the
 block, so a block ended after the client has moved on still reaches you.
 
-A client with a block shows a badge such as "50 prepaid" beside its name in the
-client list on the Partner billing page.
+A client with a block shows a badge such as "50 prepaid" beside its name on the
+Seats by client tab of the Partner billing page.
 
 If the client moves to another partner, or to being billed directly, your block
 stops applying from that day, because it was tied to you as the payer. Whether
@@ -357,7 +383,7 @@ under. Your own tenant is not invoiced while the partnership is running, so you
 are never billed under both at once, and two independently editable copies only
 ever drifted apart.
 
-It can be edited from your Partner billing page or from your own tenant's Billing
+It can be edited from the Billing details tab of your Partner billing page or from your own tenant's Billing
 view, and either way Stripe receives the same details. Operators can also correct
 it on your behalf, which is what unsticks an invoice that has nowhere to go.
 
@@ -377,16 +403,20 @@ invoices continue to carry the old details. Save again to retry.
 Owner and Billing roles can edit it.
 
 1. Open Partner billing in the portal sidebar.
-2. Under Billing details, fill in Company name (legal), Billing email, Address
-   line 1, City, Postcode and Country. VAT number, Purchase order number,
-   Address line 2 and Region / county are optional.
-3. Choose Save billing details. The button stays greyed out until all six
+2. Open the Billing details tab.
+3. Fill in Company name (legal), Billing email, Address line 1, City, Postcode
+   and Country. VAT number, Purchase order number, Address line 2 and Region /
+   county are optional.
+4. Choose Save billing details. The button stays greyed out until all six
    required fields are filled in, and the form names any that are still empty.
 
 The confirmation reads "Billing details saved." If the push to Stripe failed,
-it says so instead and asks you to save again later. The Add your invoice
-details card on the Clients view leads to the same form through Add billing
-details.
+it says so instead and asks you to save again later.
+
+While details are missing, an Add your invoice details card also appears on
+the Your subscription tab, and its Billing details → button switches to the
+form. The Add your invoice details card on the Clients view opens Partner
+billing through Add billing details, and that card takes you on from there.
 
 Until the profile carries a legal name, a billing email and a full postal address
 including the country, the Clients page
@@ -410,7 +440,7 @@ they do for a direct organisation, and
 [invoices and credits](/admin/invoices-and-credits/) covers them in full. What
 follows is what differs for a partner.
 
-Your invoices are listed on the Partner billing page, newest first, each linking
+Your invoices are listed on the Documents tab of the Partner billing page, newest first, each linking
 to its own hosted page to view or download it. An open invoice can also be paid
 by card on the page itself. That list is your partner account's, not your own
 tenant's: your own organisation is not invoiced while the partnership is
@@ -419,9 +449,11 @@ offers a Go to Partner billing button instead.
 
 To add or change the card:
 
-1. Open Partner billing in the portal sidebar.
-2. Choose Add payment method, or Update payment method when a card is already
-   on file.
+1. Open Partner billing in the portal sidebar. It opens on the Your
+   subscription tab.
+2. Choose Update payment method when a card is already on file. With no card
+   on file, choose Add payment method on the Add a payment method card at the
+   top of the tab.
 3. Enter the card in the form that opens and choose Save card. If your bank asks
    you to confirm it, follow its prompt.
 
@@ -435,16 +467,20 @@ method." A card that is not the default is never charged, so Sigil does not
 report it as saved. The button changes to Try again, which repeats only that
 last step, so you do not enter the card a second time.
 
-Manage billing in Stripe on
-the same page opens Stripe's customer portal, for anything the page does not do
+Manage billing in Stripe, on
+the same tab, opens Stripe's customer portal, for anything the page does not do
 itself, such as removing an old card.
 
 To pay or open an invoice:
 
 1. Open Partner billing in the portal sidebar.
-2. Under Invoices, choose Pay on an open invoice to pay it by card in the form
+2. Open the Documents tab.
+3. Under Invoices, choose Pay on an open invoice to pay it by card in the form
    that opens, or View to open its hosted page on Stripe. The button beside them
    downloads the PDF.
+
+If your bank asks you to confirm the payment, you come back to the Documents
+tab afterwards.
 
 Paying an invoice this way charges that invoice only. It does not change the
 card the partner account is charged to.
@@ -455,17 +491,19 @@ metered seats with no card does not appear.
 
 Paying by bank transfer, quote the invoice number as the payment reference. A
 transfer that arrives without one sits on your account and the page says so,
-naming the amount waiting to be matched. Somebody applies it by hand within a
+naming the amount waiting to be matched, at the top of the Your subscription
+tab. Somebody applies it by hand within a
 working day.
 
-Credits and corrections applied to your partner account are listed on the same
-page with the reason each was agreed, including any
+Credits and corrections applied to your partner account are listed under
+Credits on the Documents tab, with the reason each was agreed, including any
 [service credit](/partners/service-level/#claiming-a-credit) for a month that
 fell short of the uptime commitment. A credit comes off a following invoice
 rather than being paid out.
 
-A credit waiting on the account is shown above the invoices as well, so it is
-visible before the invoice that consumes it arrives.
+A credit waiting on the account also shows as Credit on account, "off the next
+invoice", among the figures on the Your subscription tab, so it is visible
+before the invoice that consumes it arrives.
 
 ## What clients see
 

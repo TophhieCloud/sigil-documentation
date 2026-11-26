@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 7180f21 -->
+<!-- last-portal-commit: 94e4ee0 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-26T15:57:21Z -->
+<!-- last-flag-check: 2026-11-26T16:11:22Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 26 November
 
+- **Partner billing in tabs.** The Partner billing page is now split into
+  Your subscription, Seats by client, Billing details and Documents, and a "!"
+  marks a tab that needs you, such as a missing card or incomplete invoice
+  details. The open tab stays in the address bar, so paying an invoice brings
+  you back to Documents. See
+  [Partner billing](/partners/billing/#the-partner-billing-page).
 - **A breadcrumb in the header, and pages sized to fit.** The portal header now
   shows where you are, such as "Organisation › Billing", and on a detail page it
   links back to the list, as in "Monitoring › Link clicks › Link detail". On a
