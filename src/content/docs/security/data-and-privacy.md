@@ -46,14 +46,13 @@ with the version it shows.
 
 Configuration: assignment rules, banners, footers, roles and users.
 
-A name for each address Sigil has seen, so that the portal can show people by
-name rather than by address. It holds the display name, and the given name and
-surname where the directory offers them, beside the address they belong to.
-These come from the name on each person's sign-in token and from the directory
-lookup Sigil already makes, so no permission beyond the ones already granted is
-involved. A name is kept after the person's access is removed, because the
-[change log](/monitoring/change-log/) goes on naming them for years and a name
-that vanished with the role would make the log less readable, not more.
+A name for each person who holds portal access, so that the portal can show
+them by name rather than by address. The name comes from the person's sign-in
+token and nothing else, so no permission beyond the ones already granted is
+involved. Sigil keeps it only while the person has access: it is deleted when
+the last of their access ends, and when they are
+[erased](/admin/privacy-requests/). After that, the
+[change log](/monitoring/change-log/) shows their address instead.
 
 The addresses of any mailboxes excluded from Sigil, with the note an
 administrator wrote against each and who excluded it. Where a whole Entra group
@@ -468,48 +467,62 @@ support](/monitoring/change-log/#actions-taken-by-tophhie-cloud-support).
 
 ## Subject access requests
 
-Sigil can also export what is held against a single mailbox, which is what a
-subject access request usually starts from. Request it through support, which
-runs it against one address in your organisation.
+Your administrators can answer most access and erasure requests themselves,
+from [Privacy requests](/admin/privacy-requests/) in the portal. They look a
+person up by email address, see what Sigil holds about them, and export it as a
+JSON file or erase it. You can still ask support to run either for you.
 
-The file carries seven kinds of record:
+The lookup covers the person's aliases and earlier addresses as well as the one
+typed in. The export holds:
 
-That mailbox's signature events from the last 90 days and its activity rollup:
-every request made for it in that time, when, from which Outlook client, and
-whether a signature came back, with the rollup's longer-running summary beside
-them.
+The person's signature requests from the last 90 days and their activity
+summary: every request made for them in that time, when, from which Outlook
+client, and whether a signature came back.
 
-Whatever the person entered in their
-[profile fields](/admin/profile-fields/), which is the only part of the file they
-wrote themselves.
+Whatever they entered in their [profile fields](/admin/profile-fields/).
 
-Their portal role, if they have one, with when it was granted and by whom.
+Their portal role, if they have one.
 
-Whether their mailbox is [excluded from Sigil](/admin/cost-management/), together
-with the note an administrator wrote against it, since that note is prose written
-about them.
+Whether their mailbox is [excluded from Sigil](/admin/cost-management/), with
+the note an administrator wrote against it, and each excluded Entra group that
+covers them.
 
-Each excluded Entra group that covers them, one entry per group. This is the only
-part of the file that can legitimately hold several rows for one address.
+Survey ratings left on their emails, and any assignment rules that name them.
 
-Where the person is a partner's own staff scoped to your organisation rather than
-one of your mailboxes, the record of that scoping.
+Where the person is a partner's own staff scoped to your organisation, the
+record of that scoping.
 
 Any record of them signing in before your organisation connected, described
 above. That one is worth expecting, because it predates your tenant and is the
 record its subject is least likely to know exists.
 
-The file deliberately leaves out the authorship stamps that sit on templates,
-banners, links, rules, settings and the change log. Those say that an
-administrator did something, rather than holding anything about the person as a
-subject, and sweeping them in would turn a subject access request into a second
-copy of your whole audit trail. Your billing contact address is left out for the
-opposite reason: there is one per organisation and it describes the company, so
-returning it would disclose your organisation's details rather than that person's.
+The change log entries they made and the entries about them, the account emails
+and notices Sigil sent them, their name and their cached directory record.
 
-Erasure of a single mailbox is deliberately not offered. Removing one person's
-records from an append-only audit trail would compromise the trail itself, so the
-available path is a full tenant purge. See [compliance](/security/compliance/).
+It also lists the templates whose content contains their address, and says
+whether they are your billing contact.
+
+### Erasing one person
+
+Erasing deletes what Sigil has no reason to keep about the person in your
+organisation, including their portal access. Where a record has to survive, the
+person's address is replaced with a reference such as "Erased person 7K3F9Q".
+Your change log keeps every entry that way, so it still shows what was done and
+when, but no longer says who did it. Records of account emails keep the date and
+the number of recipients.
+
+A few things stay, and the portal lists the ones that apply before anybody
+confirms. Your billing contact address stays until you change it. If the person
+signed your organisation up, Tophhie Cloud keeps that in its own account
+records. Sigil never edits your templates, so an address written into one stays
+until you remove it. Backups expire within 30 days.
+
+An erasure stays done after a restore. If Tophhie Cloud restores your
+organisation's data to an earlier point, Sigil checks the restored data against
+every erasure and erases anybody it brought back. Survey links and contact cards in emails the person
+sent before the erasure stop working, so an old email can't bring them back.
+
+The full steps are in [privacy requests](/admin/privacy-requests/).
 
 ## Deleting your data
 

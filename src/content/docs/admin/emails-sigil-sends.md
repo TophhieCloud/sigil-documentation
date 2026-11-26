@@ -2,7 +2,7 @@
 title: Emails Sigil sends
 description: Every message Sigil sends to administrators and users, what triggers it, and the address it comes from.
 sidebar:
-  order: 11
+  order: 12
 ---
 
 Sigil is not a mailing product, and it sends very little. The list below covers the automated messages Sigil sends, which is worth having in front of you when somebody forwards you a message
@@ -67,6 +67,7 @@ organisation who can actually act on it.
 | Your changes to a named template are live, or were sent back | A draft somebody submitted is approved or sent back. Goes to the person who submitted it, and quotes the reviewer's note when it is sent back. See [approvals](/signatures/approvals/#the-author-hears-the-outcome) |
 | A Sigil API key for your organisation expires on a named day | A week before an [API key](/admin/api-keys/) with an expiry date stops working. Goes to your administrators and the person who created the key |
 | Your Sigil data has been restored to an earlier point | Tophhie Cloud has restored your organisation's Sigil data to its last nightly checkpoint. Says that changes made since then are gone and need making again. Goes to your administrators |
+| A named partner erased a person's data in your organisation | An Owner or Admin at your partner [erased one person's data](/admin/privacy-requests/#when-your-partner-erases-someone). Names who did it and the reference your change log now uses, never the erased person's address. Goes to your administrators |
 | Sigil health digest | Weekly on a Monday by default, or on the weekday or date your admins choose, to every administrator. Coverage, apply failures and anything waiting on a decision |
 | Sigil health digest, on request | An administrator presses "Send me one" in [settings](/admin/settings/). Goes to that administrator only |
 | Action needed: reconnect Sigil, followed by your organisation's name | Sigil has lost permission to read your directory, so signatures may have stopped updating. Sent to every administrator, once each time it happens. Carries a Reconnect Sigil button |

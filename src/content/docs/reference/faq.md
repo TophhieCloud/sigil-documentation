@@ -260,8 +260,9 @@ instead, and nothing is charged.
 
 ## Can we get our data out?
 
-Templates export as portable JSON bundles including images. Everything held about
-a single mailbox can be exported for a subject access request. See
+Templates export as portable JSON bundles including images. Your administrators
+can export everything Sigil holds about one person, or erase it, from
+[Privacy requests](/admin/privacy-requests/). See
 [import and export](/signatures/import-export/) and
 [compliance](/security/compliance/).
 

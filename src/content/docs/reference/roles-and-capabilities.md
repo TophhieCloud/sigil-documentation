@@ -111,8 +111,8 @@ capability can do it too.
 
 What a custom role cannot reach is the authority that belongs to the Admin role
 itself rather than to a capability: managing Admins, accepting the data
-processing agreement, creating API keys, defining custom roles, rejecting a
-submitted draft, the getting started checklist, and publishing while
+processing agreement, creating API keys, defining custom roles,
+[privacy requests](/admin/privacy-requests/), rejecting a submitted draft, the getting started checklist, and publishing while
 [publish approval](/signatures/approvals/) is switched on. Those stay with
 Admins, and with a partner's Owners and Admins working inside a managed client,
 with one exception. Only the client's own Admin can accept its data processing

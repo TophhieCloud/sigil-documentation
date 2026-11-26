@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: c15b9fb -->
+<!-- last-portal-commit: 500c343 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-25T17:32:11Z -->
+<!-- last-flag-check: 2026-11-26T09:06:53Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -13,6 +13,26 @@ page that covers it in full. Features still in testing are left off until they
 are available to every organisation.
 
 ## November 2026
+
+### 26 November
+
+- **Privacy requests in the portal.** Admins, and a partner's Owners and Admins
+  working in a client, can now look a person up by email address, see what
+  Sigil holds about them, export it as a JSON file, or erase it. Erasing asks
+  you to type the address and sign in again, and can also exclude the mailbox
+  so Sigil stops creating new data about it. Users and roles and the Activity
+  Mailboxes tab have a Privacy button that opens the page for that person. See
+  [Privacy requests](/admin/privacy-requests/).
+- **Erased people keep their change log entries under a reference.** After an
+  erasure, the change log keeps every entry the person made but shows a
+  reference such as "Erased person 7K3F9Q" instead of their address. If a
+  partner does the erasure, your administrators get an email with that
+  reference. See
+  [Who each entry names](/monitoring/change-log/#who-each-entry-names).
+- **Names last only as long as access.** Sigil now keeps a person's name only
+  from their sign-in token, and only while they have portal access. Once their
+  access ends, the change log shows their address alone. See
+  [Who each entry names](/monitoring/change-log/#who-each-entry-names).
 
 ### 25 November
 

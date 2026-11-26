@@ -197,6 +197,11 @@ client rather than to you: it appears on their own list, flagged as created by
 their IT provider, and their Admin can revoke it. There is no key that spans
 several clients, so a provider with forty clients manages forty of them.
 
+Owners and Admins can answer a privacy request inside a client too, exporting or
+erasing one person's data from [Privacy requests](/admin/privacy-requests/).
+When you erase somebody, the client's administrators get an email naming you and
+the reference their change log now uses for the person.
+
 Every key your firm created inside a client is revoked when the partnership with
 that client ends, whichever side ends it. The client's change log records each
 revocation, so an integration that stops working the day after a release has an

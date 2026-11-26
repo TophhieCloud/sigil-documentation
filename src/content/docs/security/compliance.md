@@ -46,19 +46,21 @@ Neither is pruned and neither can be edited.
 
 ## Subject access requests
 
-Sigil can export everything held about a single mailbox, which is what a subject
-access request under GDPR or similar regimes needs. Request it through support.
+Your administrators can answer a subject access request under GDPR or similar
+regimes themselves, from [Privacy requests](/admin/privacy-requests/) in the
+portal. It finds what Sigil holds about one person by email address and exports
+it as one JSON file. You can also ask support to run the export for you.
 
-One file answers the request. It carries that mailbox's signature telemetry, the
-values the person entered in your profile fields, their portal role, any
-exclusion covering them and the note written against it, and the record of them
-signing in before your organisation connected. The full list, and what is
-deliberately left out of it, is in
-[data and privacy](/security/data-and-privacy/#subject-access-requests).
+The file carries that person's signature telemetry, the values they entered in
+your profile fields, their portal role, any exclusion covering them and the note
+written against it, their change log entries, the emails Sigil sent them, and
+the record of them signing in before your organisation connected. The full list
+is in [data and privacy](/security/data-and-privacy/#subject-access-requests).
 
-Erasure of an individual mailbox is deliberately not offered. Removing one
-person's entries from an append-only audit trail would undermine the trail, so the
-available erasure path is a full tenant purge.
+The same page can erase one person's data. Their change log entries stay, with
+their address replaced by a reference such as "Erased person 7K3F9Q", so the
+audit trail still records what happened without naming them. See
+[erasing one person](/security/data-and-privacy/#erasing-one-person).
 
 ## Controller, processor, and lawful basis
 
@@ -432,7 +434,7 @@ is that the live systems are cleared on the purge and the last copy expires
 inside 90 days, not that both happen at once.
 
 This matters for one kind of request in particular. If you are answering an
-erasure request by deprovisioning, the date you can commit to is the backup
+erasure request for your whole organisation by deprovisioning, the date you can commit to is the backup
 expiry rather than the purge, and it is better to say so than to discover the
 distinction afterwards.
 

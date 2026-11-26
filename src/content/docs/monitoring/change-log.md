@@ -48,6 +48,7 @@ organisation.
 | Listing an Entra group in cost management, and every later change to who it covers | Yes |
 | Changing the cost management mode | Yes |
 | Creating or revoking an API key | Yes |
+| Exporting or erasing one person's data from [Privacy requests](/admin/privacy-requests/) | Yes |
 | Adding, changing, hiding or deleting a profile field | Yes |
 | An administrator editing a colleague's profile values | Yes |
 | A person editing their own profile values | No |
@@ -64,20 +65,23 @@ Where Sigil knows a display name for the address that acted, the entry shows the
 name with the address beneath it. Where it knows none, it shows the address
 alone.
 
-The names come from your own directory, from the name on each person's sign-in
-token and from the directory lookup Sigil already makes when it renders a
-signature. No new permission is involved, and nothing is asked of Microsoft that
-was not asked before.
+The name comes from each person's sign-in token. No permission is involved, and
+nothing is asked of Microsoft for it.
 
-They are attached when the log is read rather than written onto the entry, so
+Names are attached when the log is read rather than written onto the entry, so
 the entry keeps the address it was written with. That has a consequence worth
 knowing: somebody who has since been renamed shows their current name against an
 old entry, with the address as it stood at the time still beside it. The record
 is the address, and the name is a lookup presented honestly as one.
 
-A name does not depend on the person still having access. Names outlive roles
-deliberately, because a log that stopped naming somebody the moment they left
-would become least readable exactly when it matters most.
+Sigil keeps a name only while the person has portal access. Once the last of
+their access ends, their entries show the address alone.
+
+An entry made by somebody whose data was
+[erased](/admin/privacy-requests/) shows a reference such as
+"Erased person 7K3F9Q" instead of their address. Every one of their entries
+carries the same reference, so you can still see that they were all one
+person's.
 
 ## Profile field entries
 
@@ -174,6 +178,7 @@ Entries read in plain language rather than as internal lever names:
 | Opened a support session with permission to make changes | An operator opened an edit session while your organisation allowed [Sigil support access](/admin/settings/#sigil-support-access) |
 | Exported your organisation's data | A tenant export was taken |
 | Exported one mailbox's data for a subject access request | A per-mailbox export was taken. See [subject access requests](/security/compliance/#subject-access-requests) |
+| Erased one person's data on your written instruction | Support erased one person at your organisation's written request. The entry gives the person's reference, never their address. See [privacy requests](/admin/privacy-requests/) |
 | Set up your organisation | Your tenant was provisioned |
 | Changed your organisation's settings | An organisation-wide setting was changed |
 | Changed your organisation's add-ons | A paid add-on, such as the [branded link domain](/monitoring/branded-link-domain/), was granted or withdrawn. The entry names the add-on and says whether it is billed. Withdrawing the link domain add-on also removes your branded domain |
