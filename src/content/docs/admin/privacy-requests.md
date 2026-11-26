@@ -261,7 +261,16 @@ See [emails Sigil sends](/admin/emails-sigil-sends/).
 ## In the change log
 
 Look-ups, exports, report downloads and erasures all appear in the
-[change log](/monitoring/change-log/) as a privacy request. Each entry gives the
-person's reference rather than their address, so a look-up, an export and a
-later erasure of the same person line up. An erasure entry also says whether
-the mailbox was excluded.
+[change log](/monitoring/change-log/) as a privacy request. Only admins, and a
+partner's Owners and Admins working in your organisation, can see these
+entries. Other roles and API keys that read the change log don't see them.
+
+Each entry names the person by email address until they are erased. The
+erasure then replaces the address with the person's reference, such as
+"Erased person 7K3F9Q", so a look-up, an export and the erasure of the same
+person still line up. Once an erasure is on record, new entries about that
+person use the reference too. If Sigil held nothing about an address you looked
+up, the entry doesn't keep the address.
+
+An erasure entry also says whether the mailbox was excluded. See
+[Privacy request entries](/monitoring/change-log/#privacy-request-entries).

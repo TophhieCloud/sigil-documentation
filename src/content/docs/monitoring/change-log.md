@@ -83,6 +83,39 @@ An entry made by somebody whose data was
 carries the same reference, so you can still see that they were all one
 person's.
 
+## Privacy request entries
+
+A look-up, export, report download or erasure from
+[Privacy requests](/admin/privacy-requests/) is written as a privacy request
+entry, and only admins can see it. Each one carries an "Admins only" badge in
+the Audit log view.
+
+Who sees these entries:
+
+- Your organisation's admins, and a partner's Owners and Admins working in your
+  organisation, see every privacy request entry.
+- Editors, Viewers, the Compliance role and custom roles with the Monitoring
+  area don't see them at all. The log gives no sign that they exist.
+- An [API key](/admin/api-keys/) reading the change log never receives them.
+- Tophhie Cloud support can see that an entry exists, who made it and when, but
+  not whom it is about.
+
+The entry names the person it was about by their email address, so an admin can
+tell whose data was looked up. There are three exceptions:
+
+- If the person has been erased, or an erasure of them is running or has
+  failed, the entry uses their reference, such as "Erased person 7K3F9Q",
+  instead of the address. When an erasure finishes, it replaces the address on
+  their earlier privacy request entries with the same reference.
+- If Sigil held nothing about the address, for example because it was mistyped
+  or belongs to somebody outside your organisation, the entry doesn't keep it.
+  The Detail line reads "an address Sigil held nothing about".
+- Some older entries named the person by a reference only. Where that person
+  was never erased, the reference reads "Person 7K3F9Q", without "Erased".
+
+A [tenant export](/security/data-and-privacy/) includes privacy request entries,
+because it is your organisation's own copy of the log.
+
 ## Profile field entries
 
 Defining which [profile fields](/admin/profile-fields/) exist is an
@@ -372,6 +405,7 @@ change that had replaced half the list.
 | Excluding or including a mailbox | The addresses, the group where one was involved, and the note |
 | A staged rollout | The template, the versions, which transition, the percentage and the reason |
 | Creating or revoking an API key | The key's name, what became of it, and its access |
+| A privacy request | What was done (looked one person up, exported one person's data, downloaded a privacy report, or erased), whom it was about, and for an erasure, whether the mailbox was excluded |
 | A branded link domain | The hostname, what changed about it, and the reason where something was refused |
 | Anything Tophhie Cloud support did | The lever's own summary, such as the seat count that was set or the address whose role changed |
 
@@ -517,3 +551,6 @@ Tophhie Cloud reads rather than what you read. See
 Admins, Editors, Viewers and the Compliance role, which all hold monitoring, and
 any custom role given the Monitoring area. The Marketing and Billing roles do not
 reach it.
+
+Privacy request entries are the exception: only admins see those. See
+[Privacy request entries](#privacy-request-entries).

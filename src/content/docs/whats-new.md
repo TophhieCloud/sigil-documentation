@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 188d04f -->
+<!-- last-portal-commit: 088ee9e -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-26T16:38:07Z -->
+<!-- last-flag-check: 2026-11-26T17:25:27Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 26 November
 
+- **Privacy request entries are for admins only.** Look-ups, exports, report
+  downloads and erasures in the change log are now visible only to admins, and
+  to a partner's Owners and Admins working in your organisation, with an
+  "Admins only" badge. Those entries now name the person by email address
+  until they are erased, when the address is replaced with their reference.
+  See [Privacy request entries](/monitoring/change-log/#privacy-request-entries).
 - **Partner billing figures as tiles.** The figures on the Your subscription tab
   now sit in a row of tiles across the top, with the pricing note and buttons
   beneath. Seats in use also shows how many clients it counts, as in "across 12
