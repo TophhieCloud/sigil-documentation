@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 94e4ee0 -->
+<!-- last-portal-commit: 016630f -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-26T16:11:22Z -->
+<!-- last-flag-check: 2026-11-26T16:21:37Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 26 November
 
+- **Add-ons in the partner estimate.** "This month, estimated" on Partner
+  billing now includes add-ons such as a branded link domain, not just seats.
+  When add-ons are part of it, a line below splits the figure into seats and
+  add-ons, so a partner whose mailboxes are all prepaid can see the add-on
+  charge before the invoice arrives. See
+  [Partner billing](/partners/billing/#checking-the-period-so-far).
 - **Partner billing in tabs.** The Partner billing page is now split into
   Your subscription, Seats by client, Billing details and Documents, and a "!"
   marks a tab that needs you, such as a missing card or incomplete invoice

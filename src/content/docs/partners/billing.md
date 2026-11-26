@@ -166,13 +166,21 @@ current period stands.
 | Seats in use | Today's billable mailboxes across every client |
 | Average this period | The average so far, to two decimal places, with how many days have been measured. It shows a dash until the first night of the period has been measured. Where a [prepaid block](#prepaid-mailboxes-for-a-client) applies, this is the average after the block, and the average as measured is shown beside it, as in "34.20 measured, before prepaid" |
 | Prepaid mailboxes | Only shown while one of your clients has a prepaid block. The prepaid mailboxes across all your clients today, "netted off your clients' usage" |
-| This month, estimated | The average so far at your rate, less your partner discount. Before your account moves to the average, it is today's count instead. While a [change of invoice date](#changing-your-invoice-date) is cutting the period short, it is scaled to the days that invoice covers and reads, for example, "for 9 of 31 days" |
+| This month, estimated | Your seats and any [add-ons](#add-ons-on-a-client) for the period so far, at your rates and less your partner discount. Seats are the average so far, after any prepaid block; before your account moves to the average, they are today's count instead. When add-ons are part of the figure, a line below splits it, as in "£0.00 seats + £12.00 add-ons". While a [change of invoice date](#changing-your-invoice-date) is cutting the period short, it is scaled to the days that invoice covers and reads, for example, "for 9 of 31 days" |
 | Next invoice | The date your next invoice is raised, with the day of the month invoices fall on, as in "on the 1st of each month". While a change of invoice date is waiting, it shows that change's day instead, with "invoice date moving to the 1st" |
 
-The estimate moves as the month goes on, and comes close to the invoice's seat
-charge once the period's last day is measured. It leaves out VAT, credits and
-add-ons. Early in a period it rests on a
-few days, so a rollout that is still under way pulls it about.
+The estimate moves as the month goes on, and comes close to the invoice once
+the period's last day is measured. Add-ons are counted the way they are
+invoiced: the period's average of clients with one live, or, before your account
+moves to the average, the latest night's count. It leaves out VAT and credits.
+Early in a period it rests on a few days, so a rollout that is still under way
+pulls it about.
+
+A prepaid block covers seats only. If every mailbox is prepaid but a client has
+a branded link domain live, the estimate still shows the add-on, so you can
+expect an invoice for it. When you hold a block, the pricing note on the same
+tab says so: "Prepaid mailboxes cover seats only, so add-ons are still billed
+monthly."
 
 If the numbers look stale, Owner and Billing staff can ask for a fresh count:
 
@@ -241,7 +249,8 @@ billed monthly. The partner agreement bills monthly in arrears with no minimum
 spend, so a prepayment sits outside it and is agreed deal by deal in a signed
 side letter. Under that letter the block is non-refundable, runs for a fixed
 term, covers the named client only, and ends if the client leaves your
-management. Usage above the block is billed as normal.
+management. Usage above the block is billed as normal, and so are
+[add-ons](#add-ons-on-a-client), which no block covers.
 
 To set one up:
 
