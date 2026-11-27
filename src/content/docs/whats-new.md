@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: af41ac2 -->
+<!-- last-portal-commit: baa95f0 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-27T12:07:01Z -->
+<!-- last-flag-check: 2026-11-27T12:49:51Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,12 @@ are available to every organisation.
 
 ### 27 November
 
+- **The header names what you opened.** On the template editor and a tracked
+  link's detail page, the header breadcrumb now ends on the template's name or
+  the link's site and path, as in "Monitoring › Link clicks ›
+  contoso.com/pricing", instead of a general "Editor" or "Link detail". The
+  browser tab keeps the general name. See
+  [Finding your way around](/start/quickstart/#finding-your-way-around).
 - **The designer's preview waits for a whole address too.** The Live preview in
   the designer now re-renders once the Render as and Sent by boxes are empty or
   hold a whole address, as the HTML editor already did. While you type, the last

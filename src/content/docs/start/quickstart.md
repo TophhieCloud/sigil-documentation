@@ -78,10 +78,14 @@ Monitoring and Organisation. You only see the pages your role can open.
 
 The header at the top of each page shows where you are as a breadcrumb: the
 sidebar section, then the page, for example "Organisation › Billing". On a page
-you reach from a list, the list page sits in between as a link back, so a
-template in the editor shows "Signature › Templates › Editor" and one link's
-detail page shows "Monitoring › Link clicks › Link detail". To go back to the
-list:
+you reach from a list, the list page sits in between as a link back, and the
+last part names the record you opened. A template in the editor shows its name,
+as in "Signature › Templates › Sales team". A tracked link's detail page shows
+the link's site and path without anything after a "?", as in "Monitoring › Link
+clicks › contoso.com/pricing". Until the record loads, the header shows the
+page's general name, such as Editor or Link detail. The browser tab keeps that
+general name, so a template or link name doesn't end up in your browser
+history. To go back to the list:
 
 1. Choose the list page's name in the header, such as Templates or Link clicks.
 
