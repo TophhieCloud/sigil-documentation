@@ -383,6 +383,45 @@ Under the seat figure, See which mailboxes these are opens the
 management, which lists them by name. It reads your directory live too, so it
 can be a day ahead of the figure above it.
 
+### Seat history
+
+Between the subscription panel and the Add-ons card, the Seat history card
+shows where the seat figure came from, one day at a time. For each night it gives the licensed mailboxes
+Sigil counted, the [prepaid mailboxes](#prepaid-mailboxes) inside that count, and
+the number your subscription was billed for that day. It answers questions such
+as "why was last month's bill for 82?" without a support ticket.
+
+Billed is licensed mailboxes less prepaid, and never goes below zero. Prepaid
+mailboxes are part of the count, not added on top of it. Licensed mailboxes are
+counted after any you have [excluded](/admin/cost-management/).
+
+To read it:
+
+1. Open Billing in the portal sidebar and stay on Your subscription.
+2. Scroll to Seat history. It shows the last 90 days. To see further back, pick
+   12 months or All history from the list at the top of the card.
+3. Hover over the chart to read any day. Or enter a date under Look up a day,
+   which answers with that day's figures written out as a sum, such as
+   "82 licensed mailboxes − 12 prepaid = 70 billed".
+4. Read the table below the chart for the days the licensed mailboxes, the
+   prepaid or the billed figure changed, newest first. A figure that moved
+   carries the size of the change beside it, such as (+3).
+
+Choose Refresh to read the history again.
+
+The days are UTC days. A night when your directory could not be read shows as
+"directory not readable that night". If your organisation is billed through a
+partner, the billed figure for those days is a dash and the look-up says "billed
+through your provider". If the history covers days billed by you and days billed
+through a provider, a Billed by column shows which applied each day.
+
+The history begins with the first nightly count Sigil kept. Earlier days were
+not recorded, so an organisation with no days yet sees "Nothing recorded yet.
+Your first day appears after tonight's count; earlier days were not kept."
+
+The card appears for everyone who can see billing, on every plan, including a
+partner-managed client.
+
 ### The arrangement it names
 
 The view leads with the commercial arrangement your organisation is actually on,

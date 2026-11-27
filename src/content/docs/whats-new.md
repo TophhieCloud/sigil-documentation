@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: f58151f -->
+<!-- last-portal-commit: a32b8f8 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-27T13:44:49Z -->
+<!-- last-flag-check: 2026-11-27T14:27:50Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,16 @@ are available to every organisation.
 
 ### 27 November
 
+- **Seat history on your Billing page.** Your subscription tab now has a Seat
+  history card showing, day by day, the licensed mailboxes Sigil counted, the
+  prepaid mailboxes inside that count and the number you were billed for. You
+  can look up any day or list the days a figure changed, over 90 days, 12
+  months or all history. See [Seat history](/admin/billing/#seat-history).
+- **Each client's seat history for partners.** Usage & rebilling now has a Seat
+  history card for one client at a time, current or former, with seats, prepaid
+  and billable seats per day from the same rows as your invoice. The Prepaid
+  and Billable columns in the usage table are now always shown. See
+  [A client's seat history](/partners/billing/#a-clients-seat-history).
 - **The header names what you opened.** On the template editor and a tracked
   link's detail page, the header breadcrumb now ends on the template's name or
   the link's site and path, as in "Monitoring › Link clicks ›

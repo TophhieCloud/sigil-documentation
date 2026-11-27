@@ -518,6 +518,7 @@ telemetry.
 | `POST /api/admin/billing/cancel`, `…/reactivate` | Admin token, billing capability | Schedule the subscription to end at the close of the current period, or resume it: inside that window reactivating lifts the schedule, after it a new subscription is started. Reactivating answers 409 until the billing profile is complete, and also answers 409, with the reason in `error`, when Stripe refuses the new subscription, most often because a card account has no payment method |
 | `PUT /api/admin/billing/profile` | Admin token, billing capability | Save the billing profile |
 | `GET /api/admin/billing/invoices` | Admin token, billing capability | Invoice history, newest first, each row carrying the hosted page and the PDF. Answers with an empty list and a flag rather than an error when the invoices cannot be read |
+| `GET /api/admin/billing/seat-history` | Admin token, billing capability | The organisation's [seat history](/admin/billing/#seat-history), oldest first, one row per UTC day: licensed mailboxes, prepaid mailboxes and the quantity billed. Pass `days` from 1 to 2200, default 90. `billedQuantity` is null on a day nothing was billed, such as a day billed through a partner. Counts only |
 | `GET /api/admin/billing/adjustments` | Admin token, billing capability | Credits and corrections applied to the account, newest first, each with its category and the reason |
 | `POST /api/admin/billing/addons/link-domain` | Admin token, billing capability | Buy or drop the branded link domain add-on. Refused for a partner-managed client, for an organisation with no live subscription, and until the billing profile and a means of payment are in place. Dropping it removes the domain |
 | `GET /api/admin/exclusions` | Admin token, cost management capability | The cost management list and the mode that says how it is read: the individually listed mailboxes, each annotated with whether it still resolves in the directory and whether it was billable, the listed groups, the totals across both, and the seats the list bills |
@@ -579,6 +580,8 @@ tenant. They live under `/api/admin/partner`.
 | `PUT /billing/profile` | Save the partner's own invoice details |
 | `GET /billing/invoices`, `GET /billing/adjustments` | The partner account's invoice history, and the credits applied to it |
 | `GET /usage`, `GET /usage/export` | Per-client seat counts, and the CSV for rebilling |
+| `GET /usage/clients` | The clients the seat history offers: current clients by name, then former clients you were measured for, by tenant id. Billing permission |
+| `GET /usage/client-history?tenant=` | One client's [seat history](/partners/billing/#a-clients-seat-history): seats, prepaid and billable seats per measured day. Pass `days` from 1 to 2200, default 90. A tenant that was never your client answers with an empty list |
 | `GET /usage/periods` | The periods already invoiced, as reconciliation windows for the report. Empty rather than an error when the invoices cannot be read |
 | `GET/PUT /staff`, `POST /staff/remove` | Partner staff and their roles. `POST /staff/remove` takes the address in the body as `{ "email": "..." }` |
 | `GET/PUT /preferences` | Whether the partner's own Owners and Admins receive [product update emails](/admin/emails-sigil-sends/#product-updates). Owners only, like the staff list |

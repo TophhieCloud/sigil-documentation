@@ -432,7 +432,7 @@ because a document that leaves the platform must not enumerate live credentials.
 Ask support if you need any of them for a compliance exercise.
 
 The file carries a schema version, which is what tells two exports apart when the
-contents differ. Version 8 is the current one. Version 3 was where the profile
+contents differ. Version 9 is the current one. Version 3 was where the profile
 fields and their values arrived, 4 added the settings, the billing profile and
 the cost management list, 5 added the names, 6 added the custom roles your
 admins have defined, and 7 added a `csat` section. That section holds the
@@ -440,7 +440,11 @@ settings for an add-on that is not on sale yet, so for now every organisation's
 file carries its defaults there and nothing you chose. Version 8 added an
 `addonTrials` list, the free add-on trials your organisation has taken, running
 or ended, with how each one ended. No add-on on sale today offers a trial, so for
-now the list is empty.
+now the list is empty. Version 9 added `seatHistory`, your
+organisation's [seat history](/admin/billing/#seat-history): licensed
+mailboxes, prepaid mailboxes and the quantity billed, day by day, for as far
+back as it is kept. It holds counts only, the same record your Billing view
+shows.
 
 Each of those bumps mattered for the same reason. Two exports that differ in what
 they hold must not look alike, because only the later one is complete, and the

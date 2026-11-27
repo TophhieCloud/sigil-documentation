@@ -560,10 +560,33 @@ below zero, are the mailbox-days its footer prints for that client.
 
 A single day's billable figure can be negative, when a client sits below its
 block, because the block is netted across the whole period rather than day by
-day. On screen, the Prepaid and Billable columns only appear when a client in
-the window has a block. A client that moved to or from
+day. On screen, the Prepaid and Billable columns are always shown, with 0 for a
+client that has no block. A client that moved to or from
 another partner on a given day appears only in the export of the partner it was
 billed to for that day.
+
+### A client's seat history
+
+Below the table, the Seat history card follows one client over time, from the
+same daily rows as the report, the CSV and your invoice. For each day it gives
+the client's seats as measured for your invoice, your prepaid block for that
+client, and the billable figure, which is seats less prepaid.
+
+1. Open Usage & rebilling in the portal sidebar.
+2. Scroll to Seat history and pick the client from the list at the top of the
+   card. Clients you no longer manage are listed under Former clients, by
+   tenant id, for as long as you have billed days for them.
+3. Pick 90 days, 12 months or All history.
+4. Hover over the chart, or enter a date under Look up a day, to read a single
+   day as a sum, such as "54 seats − 50 prepaid = 4 billable".
+5. Read the table for the days the seats, the prepaid or the billable figure
+   changed, newest first.
+
+A day's billable figure can go below zero when a client sits under its block.
+The look-up marks that as unused prepaid, which your invoice nets across the
+period. You only see the days you were measured for: nothing from before the
+client joined you or after it left. Until you manage a client, the card reads
+"Your clients' seat history appears here once you manage one."
 
 [Add-ons](#add-ons-on-a-client) are not in it, so a partner rebilling an add-on
 reads which clients have one from the Clients view rather than from the CSV.
