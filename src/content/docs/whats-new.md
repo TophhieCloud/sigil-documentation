@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: 088ee9e -->
+<!-- last-portal-commit: 9dd99c3 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-27T09:03:32Z -->
+<!-- last-flag-check: 2026-11-27T10:32:40Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -13,6 +13,14 @@ page that covers it in full. Features still in testing are left off until they
 are available to every organisation.
 
 ## November 2026
+
+### 27 November
+
+- **The designer's preview waits for a whole address too.** The Live preview in
+  the designer now re-renders once the Render as and Sent by boxes are empty or
+  hold a whole address, as the HTML editor already did. While you type, the last
+  preview stays on screen instead of flashing a "No such user" error. See
+  [Previewing as a particular person](/signatures/previews/#previewing-as-a-particular-person).
 
 ### 26 November
 

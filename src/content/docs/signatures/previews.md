@@ -159,9 +159,10 @@ real colleague's details, use the editor's own preview.
    shared mailbox, put their address in the sent by box, or under Sent by in
    the designer.
 
-In the HTML editor, the preview waits until each box holds a whole address
-before it re-renders, so a half-typed name does not bring up a "No such user"
-error. Picking a suggestion from the list fills in the whole address for you.
+In both editors, the preview waits until each box is empty or holds a whole
+address before it re-renders, so a half-typed name does not bring up a "No such
+user" error. While you type, the last preview stays on screen. Picking a
+suggestion from the list fills in the whole address for you.
 
 The preview re-renders for that mailbox. The HTML editor also lists the
 mailbox's directory attributes under the preview, with "not set" against any
