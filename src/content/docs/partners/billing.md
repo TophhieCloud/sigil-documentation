@@ -535,7 +535,9 @@ Everything else in their portal works normally.
 ## Rebilling
 
 The Usage and rebilling view carries per-client seat counts for the current and
-prior periods, exportable as CSV.
+prior periods, exportable as CSV. It has two tabs: Daily usage, which opens by
+default, and [Seat history](#a-clients-seat-history), which follows one client
+over time.
 
 That export is the input to your own billing system. It gives you the seat count
 per client per period, which is what you need to rebill at whatever rate your own
@@ -543,10 +545,11 @@ arrangement uses.
 
 Owner and Billing roles can export it.
 
-1. Open Usage & rebilling in the portal sidebar.
+1. Open Usage & rebilling in the portal sidebar. It opens on the Daily usage
+   tab.
 2. Set From and To, then choose Show. Or pick a month under Billed periods,
    which sets both dates to that invoice's window.
-3. Choose Export CSV.
+3. Choose Export CSV. The button is only shown on the Daily usage tab.
 
 The file is named sigil-usage.csv and covers the window on screen.
 
@@ -567,15 +570,17 @@ billed to for that day.
 
 ### A client's seat history
 
-Below the table, the Seat history card follows one client over time, from the
-same daily rows as the report, the CSV and your invoice. For each day it gives
+The Seat history tab follows one client over time, from the same daily rows as
+the report, the CSV and your invoice. For each day it gives
 the client's seats as measured for your invoice, your prepaid block for that
 client, and the billable figure, which is seats less prepaid.
 
 1. Open Usage & rebilling in the portal sidebar.
-2. Scroll to Seat history and pick the client from the list at the top of the
-   card. Clients you no longer manage are listed under Former clients, by
-   tenant id, for as long as you have billed days for them.
+2. Choose the Seat history tab, then pick the client from the list at the top
+   of the card. Clients you no longer manage are listed under Former clients,
+   by tenant id, for as long as you have billed days for them. To go straight
+   to one client, choose its name in any row of the Daily usage table instead:
+   Seat history opens with that client already picked.
 3. Pick 90 days, 12 months or All history.
 4. Hover over the chart, or enter a date under Look up a day, to read a single
    day as a sum, such as "54 seats − 50 prepaid = 4 billable".
@@ -585,7 +590,8 @@ client, and the billable figure, which is seats less prepaid.
 A day's billable figure can go below zero when a client sits under its block.
 The look-up marks that as unused prepaid, which your invoice nets across the
 period. You only see the days you were measured for: nothing from before the
-client joined you or after it left. Until you manage a client, the card reads
+client joined you or after it left. The tab stays open when you reload the page, and you can bookmark or share its
+address. Until you manage a client, the card reads
 "Your clients' seat history appears here once you manage one."
 
 [Add-ons](#add-ons-on-a-client) are not in it, so a partner rebilling an add-on

@@ -3,9 +3,9 @@ title: What's new
 description: Recent changes to Sigil that admins, partners and mailbox users can see, newest first.
 ---
 
-<!-- last-portal-commit: a32b8f8 -->
+<!-- last-portal-commit: de76333 -->
 <!-- last-addin-commit: 98b46f0 -->
-<!-- last-flag-check: 2026-11-27T14:27:50Z -->
+<!-- last-flag-check: 2026-11-27T14:40:00Z -->
 
 This page lists changes to Sigil that you can see or need to know about, newest
 first. Each entry is dated by the day the change reached Sigil and links to the
@@ -16,6 +16,11 @@ are available to every organisation.
 
 ### 27 November
 
+- **Usage & rebilling in two tabs.** The page now has a Daily usage tab, where
+  it opens, and a Seat history tab for one client at a time. Choosing a
+  client's name in the daily table opens its seat history. Export CSV is on
+  the Daily usage tab. See
+  [A client's seat history](/partners/billing/#a-clients-seat-history).
 - **Seat history on your Billing page.** Your subscription tab now has a Seat
   history card showing, day by day, the licensed mailboxes Sigil counted, the
   prepaid mailboxes inside that count and the number you were billed for. You
